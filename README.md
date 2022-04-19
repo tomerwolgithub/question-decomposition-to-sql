@@ -22,7 +22,13 @@ conda create -n [ENV_NAME] python=3.8
 conda activate [ENV_NAME]
 ```
 
-2. Install the relevant requirements 
+2. Clone the repo
+```
+git clone https://github.com/tomerwolgithub/question-decomposition-to-sql
+cd question-decomposition-to-sql
+```
+
+3. Install the relevant requirements 
 ```
 pip install -r requirements.txt 
 python -m spacy download en_core_web_lg
