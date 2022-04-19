@@ -67,7 +67,8 @@ Our SQL synthesis is given examples of `<QDMR, database, answer>` and automatica
 The QDMR decompositions are either manually annotated or automatically predicted by a trained QDMR parser.
 
 1. The SQL synthesis expect a formatted `csv` file, see [example](). Note that gold SQL is only used for computing the gold answer.
-2. Synthesize SQL from the `<QDMR, database, answer>` examples:
+2. This may take several hours, as multiple candidate SQL are executed on their respective database
+3. Synthesize SQL from the `<QDMR, database, answer>` examples:
 
 ```bash
 python data_generation/main.py \
@@ -75,8 +76,6 @@ python data_generation/main.py \
 --output_file qdmr_grounded_sql.csv \
 --json_steps True
 ```
-
-3. Synthesis may take several hours, as multiple candidate SQL are executed on their respective database
 
 
 
