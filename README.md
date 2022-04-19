@@ -34,7 +34,7 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_lg
 ```
 
-4. To train the QDMR parser model please setup a different environment using the following commands:
+4. To train the QDMR parser model please setup a different environment (due to different Hugginface versions) using the following commands:
 ```
 conda create -n qdmr_parser_env python=3.8
 conda activate qdmr_parser_env
