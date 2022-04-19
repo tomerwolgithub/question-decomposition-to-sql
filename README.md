@@ -67,7 +67,7 @@ python -m spacy download en_core_web_lg
 ```
 
 ## Data Generation 🔨
-Our SQL synthesis procedure recieves as input examples of <QDMR, database, answer> and automatically geenrates SQL which executes to the correct result.
+Given examples of <QDMR, database, answer> our SQL synthesis automatically generates a query which executes to the correct answer.
 
 
 ## Data Setup
