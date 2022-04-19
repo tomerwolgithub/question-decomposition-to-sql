@@ -50,8 +50,8 @@ python -m spacy download en_core_web_lg
 * Examples for IMDB and Yelp are available [here](/data/qdmr_annotation)
 
 ### Text-to-SQL Datasets
-* Spider: [https://yale-lily.github.io/spider](https://yale-lily.github.io/spider)
-* Academic, IMDB, Yelp and GeoQuery: [https://github.com/jkkummerfeld/text2sql-data/tree/master/data/original](https://github.com/jkkummerfeld/text2sql-data/tree/master/data/original)
+* [Spider](https://yale-lily.github.io/spider)
+* [Academic, IMDB, Yelp and GeoQuery](https://github.com/jkkummerfeld/text2sql-data/tree/master/data/original)
 
 ### Databases (schema & contents)
 
