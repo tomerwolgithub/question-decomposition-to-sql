@@ -44,10 +44,10 @@ python -m spacy download en_core_web_lg
 
 ## Download Resources 🗝️
 
-### QDMR Parsing Datasets
-* Examples for Academic, GeoQuery and Spider in the Break dataset: [https://allenai.github.io/Break](https://allenai.github.io/Break)
+* **QDMR Parsing Datasets**
+	* Examples for Academic, GeoQuery and Spider in the Break dataset: [https://allenai.github.io/Break](https://allenai.github.io/Break)
 
-* Examples for IMDB and Yelp are available [here](/data/qdmr_annotation)
+	* Examples for IMDB and Yelp are available [here](/data/qdmr_annotation)
 
 ### Text-to-SQL Datasets
 * [Spider](https://yale-lily.github.io/spider)
@@ -73,7 +73,7 @@ In our experiments, QDMR question decompositions are either manually annotated o
 
 ## Models 🗂️
 
-## Data Setup
+### Data Setup
 
 Create a directory containing all relevant databases in sqlite format:
 ```
@@ -81,7 +81,7 @@ cd question-decomposition-to-sql
 mkdir databases
 ```
 
-## Experiments 🧪
+## Experiments ⚗️
 
 ### Data
 ### Evaluation
