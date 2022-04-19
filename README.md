@@ -44,14 +44,13 @@ python -m spacy download en_core_web_lg
 
 ## Download Resources 🗝️
 
-* **QDMR Parsing Datasets**
+* **QDMR Parsing Datasets:**
 	* Examples for Academic, GeoQuery and Spider in the Break dataset: [https://allenai.github.io/Break](https://allenai.github.io/Break)
-
 	* Examples for IMDB and Yelp are available [here](/data/qdmr_annotation)
 
-### Text-to-SQL Datasets
-* [Spider](https://yale-lily.github.io/spider)
-* [Academic, IMDB, Yelp and GeoQuery](https://github.com/jkkummerfeld/text2sql-data/tree/master/data/original)
+* **Text-to-SQL Datasets:**
+	* [Spider](https://yale-lily.github.io/spider)
+	* [Academic, IMDB, Yelp and GeoQuery](https://github.com/jkkummerfeld/text2sql-data/tree/master/data/original)
 
 ### Databases (schema & contents)
 
