@@ -6,7 +6,7 @@ This repository contains the code and data used in our paper:
 1. Code for automatically synthesizing SQL queries from question decompositions + answers
 2. Code for the models used in our paper mapping text-to-SQL and text-to-QDMR 
 
-**Structure:**
+* **Structure:**
 	* [**Setup**](https://)
 	* [**Resources**](https://)
 	* [**Data Generation**](https://)
