@@ -44,15 +44,15 @@ python -m spacy download en_core_web_lg
 
 ## Download Resources 🗝️
 
-#### QDMR Parsing Datasets:
-* Examples for Academic, GeoQuery and Spider in the Break dataset: [https://allenai.github.io/Break](https://allenai.github.io/Break)
-* Examples for IMDB and Yelp are available [here](/data/qdmr_annotation)
+### QDMR Parsing Datasets:
+* Academic, GeoQuery and Spider QDMRs found in the Break dataset: [https://allenai.github.io/Break](https://allenai.github.io/Break)
+* QDMR data for IMDB and Yelp is available [here](/data/qdmr_annotation)
 
-* **Text-to-SQL Datasets:**
+### Text-to-SQL Datasets:
 * [Spider](https://yale-lily.github.io/spider)
 * [Academic, IMDB, Yelp and GeoQuery](https://github.com/jkkummerfeld/text2sql-data/tree/master/data/original)
 
-* **Databases (schema & contents):**
+### Databases (schema & contents):
 * Download latest version of Spider's sqlite databases: [https://yale-lily.github.io/spider](https://yale-lily.github.io/spider)
 * Download other databases:
 	* [Academic, IMDB and Yelp (Yaghmazadeh et al., OOPSLA 2017)](https://drive.google.com/drive/folders/0B-2uoWxAwJGKY09kaEtTZU1nTWM)
@@ -60,7 +60,7 @@ python -m spacy download en_core_web_lg
 * Convert Academic, IMDB, Yelp and GeoQuery to sqlite format using the tool by [Jean-Luc Lacroix](https://github.com/dumblob/mysql2sqlite):
 ```
 ./mysql2sqlite academic_mysql.sql | sqlite3 academic_sqlite.db
-	```
+```
 
 ## Data Generation 🔨
 Given examples of <QDMR, database, answer> our SQL synthesis automatically generates a query which executes to the correct answer.
