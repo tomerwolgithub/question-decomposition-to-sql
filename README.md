@@ -44,6 +44,12 @@ python -m spacy download en_core_web_lg
 
 ## Download Resources
 
+### 
+
+### 
+
+### Databases
+
 1. Download latest version of Spider's sqlite databases: [https://yale-lily.github.io/spider](https://yale-lily.github.io/spider)
 
 2. Download other databases:
@@ -55,7 +61,9 @@ python -m spacy download en_core_web_lg
 ./mysql2sqlite academic_mysql.sql | sqlite3 academic_sqlite.db
 ```
 
-4. Create a directory containing all relevant databases in sqlite format:
+## Data Setup
+
+Create a directory containing all relevant databases in sqlite format:
 ```
 cd question-decomposition-to-sql
 mkdir databases
