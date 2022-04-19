@@ -77,6 +77,10 @@ python data_generation/main.py \
 --json_steps True
 ```
 
+### Synthesized Data
+The evaluation sets generated with BPB for the development sets of DROP, HotpotQA, and IIRC are available for download under the data directory (one file per dataset). Each zip file includes the following files:
+
+
 
 
 ## Models 🗂️
