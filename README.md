@@ -11,7 +11,7 @@ This repository contains the code and data used in our paper:
 	* [**Resources**](https://)
 	* [**Data Generation**](https://)
 	* [**Models**](https://)
-	* [**Experiments Data**](https://)
+	* [**Experiments**](https://)
 	* [**Citation**](https://)
 
 ## Setup
@@ -71,7 +71,7 @@ Given examples of <QDMR, database, answer> our SQL synthesis automatically gener
 In our experiments, QDMR question decompositions are either manually annotated or automatically predicted by a trained QDMR parser (see below).
 
 
-## Models 📊
+## Models 🗂️
 
 ## Data Setup
 
@@ -81,7 +81,10 @@ cd question-decomposition-to-sql
 mkdir databases
 ```
 
-## Experiments Data 🗂️
+## Experiments 🧪
+
+### Data
+### Evaluation
 
 ## Citation ✍🏽
 
