@@ -7,9 +7,9 @@ This repository contains the code and data used in our paper:
 2. Code for the models used in our paper mapping text-to-SQL and text-to-QDMR 
 
 * **Structure:**
-	* [Setup](https://)
-	* [Resources](https://)
+	* [**Setup**](https://)
+	* [**Resources**](https://)
 	* [**Data Generation**](https://)
-	* **Models**: [Download](https://)
-	* **Evaluation**: [Download](https://)
-	* **Citation**: [Download](https://)
+	* [**Models**](https://)
+	* [**Evaluation**](https://)
+	* [**Citation**](https://)
