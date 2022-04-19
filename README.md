@@ -50,7 +50,7 @@ python -m spacy download en_core_web_lg
 
 ### Text-to-SQL Datasets:
 * [Spider](https://yale-lily.github.io/spider)
-* [Academic, IMDB, Yelp and GeoQuery](https://github.com/jkkummerfeld/text2sql-data/tree/master/data/original)
+* [Academic, IMDB, Yelp and GeoQuery](https://github.com/jkkummerfeld/text2sql-data/tree/master/data/original) (Jonathan Kummerfeld's repository)
 
 ### Databases (schema & contents):
 * [Spider (Yu et al., 2018)](https://yale-lily.github.io/spider)
