@@ -51,7 +51,7 @@ python -m spacy download en_core_web_lg
 
 ### Text-to-SQL Datasets
 
-### Databases
+### Databases (schema & contents)
 
 * Download latest version of Spider's sqlite databases: [https://yale-lily.github.io/spider](https://yale-lily.github.io/spider)
 
