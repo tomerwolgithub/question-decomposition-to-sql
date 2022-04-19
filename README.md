@@ -18,7 +18,7 @@ This repository contains the code and data used in our paper:
 ## Citation ✍🏽
 
 ```bibtex
-@inproceedings{wolfson2022weakly,
+@inproceedings{wolfson-etal-2022-weakly,
     title={Weakly Supervised Text-to-SQL Parsing through Question Decomposition},
     author={Wolfson, Tomer and Deutch, Daniel and Berant, Jonathan},
     booktitle = {Findings of the Association for Computational Linguistics: NAACL 2022},
