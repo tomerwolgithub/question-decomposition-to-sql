@@ -14,6 +14,20 @@ This repository contains the code and data used in our paper:
 	* [**Evaluation**](https://)
 	* [**Citation**](https://)
 
+## Setup
+
+1. Create the virtual environment
+```
+conda create -n [ENV_NAME] python=3.8
+conda activate [ENV_NAME]
+```
+
+2. Install the relevant requirements 
+```
+pip install -r requirements.txt 
+python -m spacy download en_core_web_lg
+```
+
 
 ## Citation ✍🏽
 
