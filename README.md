@@ -44,7 +44,7 @@ python -m spacy download en_core_web_lg
 
 ## Download Resources
 
-1. Download latest version of Spider's sqlite databases from: [https://yale-lily.github.io/spider](https://yale-lily.github.io/spider)
+1. Download latest version of Spider's sqlite databases: [https://yale-lily.github.io/spider](https://yale-lily.github.io/spider)
 
 2. Download other databases:
 	* Academic, IMDB & Yelp (Yaghmazadeh et al., OOPSLA 2017): [https://drive.google.com/drive/folders/0B-2uoWxAwJGKY09kaEtTZU1nTWM](https://drive.google.com/drive/folders/0B-2uoWxAwJGKY09kaEtTZU1nTWM)
