@@ -66,6 +66,10 @@ python -m spacy download en_core_web_lg
 ./mysql2sqlite academic_mysql.sql | sqlite3 academic_sqlite.db
 ```
 
+## Data Generation 🔨
+Our SQL synthesis procedure recieves as input examples of <QDMR, database, answer> and automatically geenrates SQL which executes to the correct result.
+
+
 ## Data Setup
 
 Create a directory containing all relevant databases in sqlite format:
