@@ -76,6 +76,9 @@ python data_generation/main.py \
 --json_steps True
 ```
 
+3. Synthesis may take several hours, as multiple candidate SQL are executed on their respective database
+
+
 
 ## Models 🗂️
 
