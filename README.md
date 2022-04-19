@@ -13,3 +13,15 @@ This repository contains the code and data used in our paper:
 	* [**Models**](https://)
 	* [**Evaluation**](https://)
 	* [**Citation**](https://)
+
+
+## Citation ✍🏽
+
+```bibtex
+@inproceedings{wolfson2022weakly,
+    title={Weakly Supervised Text-to-SQL Parsing through Question Decomposition},
+    author={Wolfson, Tomer and Deutch, Daniel and Berant, Jonathan},
+    booktitle = {Findings of the Association for Computational Linguistics: NAACL 2022},
+    year={2022},
+}
+```
