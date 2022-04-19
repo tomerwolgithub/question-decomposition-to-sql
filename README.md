@@ -53,11 +53,16 @@ python -m spacy download en_core_web_lg
 3. Convert Academic, IMDB, Yelp and GeoQuery to sqlite format using the tool by [Jean-Luc Lacroix](https://github.com/dumblob/mysql2sqlite)
 
 4. Create a directory containing all relevant databases in sqlite format
+```
+cd question-decomposition-to-sql
+mkdir databases
+```
 
 
 ## Citation ✍🏽
 
-```bibtex
+```
+bibtex
 @inproceedings{wolfson-etal-2022-weakly,
     title={"Weakly Supervised Text-to-SQL Parsing through Question Decomposition"},
     author={"Wolfson, Tomer and Deutch, Daniel and Berant, Jonathan"},
