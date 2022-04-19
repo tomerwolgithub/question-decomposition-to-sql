@@ -42,7 +42,7 @@ pip install -r requirements_qdmr_parser.txt
 python -m spacy download en_core_web_lg
 ```
 
-## Download Resources
+## Download Resources 🗝️
 
 ### QDMR Parsing Datasets
 1. Examples for Academic, GeoQuery and Spider in the Break dataset: [https://allenai.github.io/Break](https://allenai.github.io/Break)
