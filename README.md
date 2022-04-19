@@ -50,9 +50,12 @@ python -m spacy download en_core_web_lg
 	* Academic, IMDB & Yelp (Yaghmazadeh et al., OOPSLA 2017): [https://drive.google.com/drive/folders/0B-2uoWxAwJGKY09kaEtTZU1nTWM](https://drive.google.com/drive/folders/0B-2uoWxAwJGKY09kaEtTZU1nTWM)
 	* GeoQuery (Zelle & Mooney, AAAI 1996): [https://github.com/jkkummerfeld/text2sql-data](https://github.com/jkkummerfeld/text2sql-data)
 
-3. Convert Academic, IMDB, Yelp and GeoQuery to sqlite format using the tool by [Jean-Luc Lacroix](https://github.com/dumblob/mysql2sqlite)
+3. Convert Academic, IMDB, Yelp and GeoQuery to sqlite format using the tool by [Jean-Luc Lacroix](https://github.com/dumblob/mysql2sqlite):
+```
+./mysql2sqlite academic_mysql.sql | sqlite3 academic_sqlite.db
+```
 
-4. Create a directory containing all relevant databases in sqlite format
+4. Create a directory containing all relevant databases in sqlite format:
 ```
 cd question-decomposition-to-sql
 mkdir databases
