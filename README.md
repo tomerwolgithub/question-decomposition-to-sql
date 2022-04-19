@@ -70,6 +70,7 @@ python -m spacy download en_core_web_lg
 Given examples of <QDMR, database, answer> our SQL synthesis automatically generates a query which executes to the correct answer.
 In our experiments, QDMR question decompositions are either manually annotated or automatically predicted by a trained QDMR parser (see below).
 
+
 ## Models 📊
 
 ## Data Setup
