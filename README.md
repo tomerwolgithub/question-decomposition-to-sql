@@ -22,7 +22,7 @@ conda create -n [ENV_NAME] python=3.8
 conda activate [ENV_NAME]
 ```
 
-2. Clone the repo
+2. Clone the repository
 ```
 git clone https://github.com/tomerwolgithub/question-decomposition-to-sql
 cd question-decomposition-to-sql
