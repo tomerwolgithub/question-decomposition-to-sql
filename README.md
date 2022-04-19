@@ -63,7 +63,7 @@ Convert the MySQL databases of Academic, IMDB, Yelp and GeoQuery to sqlite forma
 ```
 
 ## Data Generation 🔨
-Given examples of <QDMR, database, answer> our SQL synthesis automatically generates a query which executes to the correct answer.
+Given examples of `<QDMR, database, answer>` our SQL synthesis automatically generates a query which executes to the correct answer.
 In our experiments, QDMR question decompositions are either manually annotated or automatically predicted by a trained QDMR parser (see below).
 
 
