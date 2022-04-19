@@ -71,8 +71,8 @@ The QDMR decompositions are either manually annotated or automatically predicted
 
 ```bash
 python data_generation/main.py \
-input_file="input_qdmr_examples.csv" \
-output_file="qdmr_grounded_sql.csv" \
+--input_file input_qdmr_examples.csv \
+--output_file qdmr_grounded_sql.csv \
 --json_steps True
 ```
 
