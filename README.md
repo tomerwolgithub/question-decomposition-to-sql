@@ -53,13 +53,13 @@ python -m spacy download en_core_web_lg
 
 ### Databases
 
-1. Download latest version of Spider's sqlite databases: [https://yale-lily.github.io/spider](https://yale-lily.github.io/spider)
+* Download latest version of Spider's sqlite databases: [https://yale-lily.github.io/spider](https://yale-lily.github.io/spider)
 
-2. Download other databases:
+* Download other databases:
 	* Academic, IMDB and Yelp (Yaghmazadeh et al., OOPSLA 2017): [https://drive.google.com/drive/folders/0B-2uoWxAwJGKY09kaEtTZU1nTWM](https://drive.google.com/drive/folders/0B-2uoWxAwJGKY09kaEtTZU1nTWM)
 	* GeoQuery (Zelle & Mooney, AAAI 1996): [https://github.com/jkkummerfeld/text2sql-data](https://github.com/jkkummerfeld/text2sql-data)
 
-3. Convert Academic, IMDB, Yelp and GeoQuery to sqlite format using the tool by [Jean-Luc Lacroix](https://github.com/dumblob/mysql2sqlite):
+** Convert Academic, IMDB, Yelp and GeoQuery to sqlite format using the tool by [Jean-Luc Lacroix](https://github.com/dumblob/mysql2sqlite):
 ```
 ./mysql2sqlite academic_mysql.sql | sqlite3 academic_sqlite.db
 ```
