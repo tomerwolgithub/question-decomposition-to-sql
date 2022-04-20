@@ -118,3 +118,11 @@ bibtex
 }
 ```
 
+## License 
+This repository and its data is released under the MIT license.
+For the external datasets and databases used throughput our experiments:
+* The BREAK dataset (Wolfson et al., 2020) is under the MIT License. 
+* Spider (Yu et al., 2018) is under the CC BY-SA 4.0 License. 
+* Geo880 (Zelle and Mooney, 1996) is available under the GNU General Public License 2.0.
+* The text-to-SQL versions of GEO880 and 894 ACADEMIC (Li and Jagadish, 2014) were made publicly available by [Finegan-Dollak et al. (2018)] (https://github.com/jkkummerfeld/text2sql-data/)
+* The IMDB and YELP datasets were publicly released by [Yaghmazadeh et al. (2017)](goo.gl/DbUBMM)
