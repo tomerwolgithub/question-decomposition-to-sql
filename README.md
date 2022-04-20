@@ -14,6 +14,9 @@ This repository contains the code and data used in our paper:
 	* [**Experiments**](https://)
 	* [**Citation**](https://)
 
+<p align="center"><img width="90%" src="images/pipeline.png" /></p>
+
+
 ## Setup
 
 1. Create the virtual environment
