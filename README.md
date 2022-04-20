@@ -114,8 +114,8 @@ TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/qdmr_parser/test.
 ```
 
 ### Text-to-SQL 
-#### Gold SQL baseline
-#### QDMR baseline (synthesized SQL)
+#### 1. Gold SQL baseline
+#### 2. QDMR baseline (synthesized SQL)
 
 
 ## Experiments ⚗️
