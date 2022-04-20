@@ -14,8 +14,6 @@ This repository contains the code and data used in our paper:
 	* [**Experiments**](https://)
 	* [**Citation**](https://)
 
-<p align="left"><img width="70%" src="images/pipeline.gif" /></p>
-
 
 ## Setup
 
