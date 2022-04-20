@@ -14,7 +14,7 @@ This repository contains the code and data used in our paper:
 	* [**Experiments**](https://)
 	* [**Citation**](https://)
 
-<p align="center"><img width="90%" src="images/pipeline.png" /></p>
+<p align="center"><img width="60%" src="images/pipeline.png" /></p>
 
 
 ## Setup
