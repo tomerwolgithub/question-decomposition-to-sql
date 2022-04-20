@@ -92,11 +92,25 @@ The SQL synthesized using QDMR + answer supervision is available for each datase
 
 ### QDMR Parser
 The QDMR parser is a T5-large sequence-to-sequence model mapping NL questions to question decompositions. The model expects as input two `csv` files as its train and dev sets. Use the files from the downloaded Break dataset to train the parser. Make sure that you are in the relevant python environment (`requirements_qdmr_parser.txt`).
+To train the QDMR parser configure the following parameters in `train.py`:
+* `data_dir`: path to the directory containing the NL to QDMR datasets
+* `training_set_file`: name of the train set `csv` (e.g., Break train)
+* `dev_set_file`: name of the dev set `csv` (e.g., Break dev)
+* `output_dir`: directory to store the trained model
 
+After configuration, train the model as follows:
 ```bash
-mkdir src/qdmr_parser/data
-cp -r data/break src/qdmr_parser/data
 TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/qdmr_parser/train.py
+```
+
+To test a trained model and store its predictions, configure the following parameters in `test.py`:
+* `checkpoint_path`: path to the trained QDMR parser model to be evaluated
+* `dev_set_file`: name of the dev set `csv` to generate predictions for
+* `predictions_output_file`: path to output file to store the parser's generated predictions
+
+And run the following command:
+```bash
+TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/qdmr_parser/test.py
 ```
 
 ### Text-to-SQL 
@@ -129,7 +143,7 @@ bibtex
 
 ## License 
 This repository and its data is released under the MIT license.
-For the external datasets and databases used throughput our experiments:
+For the external datasets and databases used throughout our experiments:
 * The Break dataset [(Wolfson et al., 2020)](https://allenai.github.io/Break/) is under the MIT License. 
 * Spider [(Yu et al., 2018)](https://yale-lily.github.io/spider) is under the CC BY-SA 4.0 License. 
 * Geo880 [(Zelle and Mooney, 1996)](https://www.aaai.org/Library/AAAI/1996/aaai96-156.php) is available under the GNU General Public License 2.0.
