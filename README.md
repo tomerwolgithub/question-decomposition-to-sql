@@ -48,7 +48,7 @@ python -m spacy download en_core_web_lg
 
 ### 1. QDMR Parsing Datasets:
 * Academic, GeoQuery and Spider gold QDMRs from the [Break dataset](https://allenai.github.io/Break)
-* Gold QDMR data for IMDB and Yelp is available [in this repository](/data/qdmr_annotation)
+* Gold QDMR data for IMDB and Yelp is available [in this repository](https://github.com/tomerwolgithub/question-decomposition-to-sql/tree/main/data/annotated_qdmr)
 
 ### 2. Text-to-SQL Datasets:
 * [Spider](https://yale-lily.github.io/spider)
