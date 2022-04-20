@@ -90,9 +90,15 @@ The SQL synthesized using QDMR + answer supervision is available for each datase
 
 ## Models 🗂️
 
+### QDMR Parser
+The QDMR parser is a T5-large sequence-to-sequence model mapping NL questions to question decompositions. The model expects as input two `csv` files as its train and dev sets. Use the files from the downloaded Break dataset to train the parser. Make sure that you are in the relevant python environment (`requirements_qdmr_parser.txt`).
+
+```bash
+TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/qdmr_parser/train.py
+```
+
 ### Text-to-SQL 
 ### Text-to-QDMR
-### QDMR Parser
 
 ### Data Setup
 
