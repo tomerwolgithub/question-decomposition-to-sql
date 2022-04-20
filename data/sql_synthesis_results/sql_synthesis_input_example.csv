@@ -1,0 +1,4 @@
+,index,db_id,question,query,qdmr
+0,ACADEMIC_train_0,academic,return me the homepage of PVLDB .,"select journal_0.homepage from journal as journal_0 where journal_0.name = ""PVLDB""",return homepages ;return #1 of  PVLDB
+1,ACADEMIC_train_1,academic,"return me the homepage of "" H. V. Jagadish "" .","select author_0.homepage from author as author_0 where author_0.name = ""H. V. Jagadish""",return homepages ;return #1 of  H. V. Jagadish
+2,ACADEMIC_train_10,academic,"return me the number of references of "" Making database systems usable "" .","select publication_0.reference_num from publication as publication_0 where publication_0.title = ""Making database systems usable""",return references ;return #1 of  Making database systems usable ;return number of  #2

@@ -1,0 +1,129 @@
+question_id,question_text,decomposition
+YELP_train_0,List all the businesses with more than 4.5 stars,return businesses; return stars of #1; return #1 where #2 is higher than 4.5
+YELP_train_1,List all businesses with rating 3.5,return businesses; return rating of #1; return #1 where #2 is 3.5
+YELP_train_2,List all user ids with name Michelle,return users; return names of #1; return #1 where #2 is Michelle; return user ids of #3
+YELP_train_3,Find all states in which there is a Whataburger,return Whataburger; return states of #1
+YELP_train_4,"Find all cities in which there is a restaurant called "" MGM Grand Buffet """,return restaurants; return #1 called MGM Grand Buffet; return cities of #2
+YELP_train_5,Find the cities of businesses rated below 1.5,return businesses; return rate of #1; return #1 where #2 is lower than 1.5; return cities of #3
+YELP_train_6,"Find all cities which has a "" Taj Mahal "" .",return Taj Mahal; return cities of #1
+YELP_train_7,List all the reviews which rated a business less than 1,return businesses; return reviews of #1; return rate of #2; return #2 where #3 is lower than 1
+YELP_train_8,List all the restaurant rated more than 3.5,return restaurants; return rate of #1; return #1 where #2 is higher than 3.5
+YELP_train_9,"find all cities which has a "" Taj Mahal "" restaurant",return restaurants; return #1 that is Taj Mahal; return cities of #2
+YELP_train_10,list all the reviews by Niloofar,return Niloofar; return reviews of #1
+YELP_train_11,list all the businesses which have a review by Niloofar,return Niloofar; return reviews of #1; return businesses of #2
+YELP_train_12,list all the businesses which Niloofar rated 5,return Niloofar; return reviews of #1; return #2 rated 5; return businesses of #3
+YELP_train_13,List all the reviews by Michelle for Italian restaurant,return restaurants; return #1 that are Italian; return reviews of #2; return #3 by Michelle
+YELP_train_14,"find the number of reviews written for "" Cafe Zinho "" restaurant in Texas",return restaurants; return #1 in Texas; return #2 that is Cafe Zinho; return reviews of #3; return the number of #4
+YELP_train_15,List all 5 star Italian restaurant,return restaurants; return #1 that are Italian; return stars of #2; return #2 where #3 is 5
+YELP_train_16,List all the neighbourhoods with Italian restaurant in Madison,return restaurants; return #1 that are Italian; return #2 in Madison; return neighbourhoods of #3
+YELP_train_17,List all the neighbourhoods with Italian restaurant rated less than 2.5 in Madison,return restaurants; return #1 that are Italian; return #2 rated lower than 2.5; return #3 in Madison; return neighbourhoods of #4
+YELP_train_18,find all the restaurant in Texas,return restaurants; return #1 in Texas
+YELP_train_19,Find all the reviews for all pet groomers with more than 100 reviews,return pet groomers; return reviews of #1; return number of #2 for each #1; return #1 where #3 is higher than  100; return reviews of #4
+YELP_train_20,Find all pet groomers which have more than 100 reviews,return pet groomers; return reviews of #1; return number of #2 for each #1; return #1 where #3 is higher than  100
+YELP_train_21,"What are all the gyms in "" Los Angeles "" ?",return gyms; return #1 in Los Angeles
+YELP_train_22,Find all bars in Dallas,return bars; return #1 in Dallas
+YELP_train_23,"Find all dance schools in "" Los Angeles """,return dance schools; return #1 in Los Angeles
+YELP_train_24,"Find all restaurant in "" Los Angeles "" with more than 100 reviews",return restaurant; return #1 in Los Angeles; return reviews of #2; return number of #3 for each #2; return #2 where #4 is higher than 100
+YELP_train_25,Find all hotels in Dallas with at least 50 reviews,return hotels; return #1 in Dallas; return reviews of #2; return number of #3 for each #2; return #2 where #4 is at least 50
+YELP_train_26,"Find all users who reviewed restaurant "" Mesa Grill """,return restaurants; return #1 that is Mesa Grill; return review of #2; return users of #3
+YELP_train_27,"List the addresses of all Walmart in "" Los Angeles """,return Walmart; return #1 in Los Angeles; return addresses of #2
+YELP_train_28,"Find all restaurant reviewed by Patrick in "" Los Angeles """,return restaurants; return #1 reviewed by Patrick; return #2 in Los Angeles
+YELP_train_29,Find all bars reviewed by Patrick,return bars; return #1 reviewed by Patrick
+YELP_train_30,Find all bars reviewed by Patrick with at least 3 stars,return bars; return #1 reviewed by Patrick; return stars of #2; return #2 where #3 is at least 3
+YELP_train_31,"Find all bars in "" Los Angeles "" with at least 30 reviews",return bars; return #1 in Los Angeles; return reviews of #2; return number of #3 for each #2; return #2 where #4 is at least 30
+YELP_train_32,Which restaurant in Dallas were reviewed by user Patrick ?,return restaurants; return #1 in Dallas; return review of #2; return user of #3; return #2 where #4 is Patrick
+YELP_train_33,"Find all users who have written tips for "" Barrio Cafe "" in 2015",return tips; return #1 for Barrio Cafe; return #2 in 2015; return users of #3
+YELP_train_34,Find all businesses in Texas with a rating below 2,return businesses; return #1 in Texas; return ratings of #2; return #2 where #3 is lower than 2
+YELP_train_35,Find all pet hospice in Pittsburgh,return pet hospices; return #1 in Pittsburgh
+YELP_train_36,Find all reviews by Patrick with a rating above 4,return reviews; return #1 by Patrick; return ratings of #2; return #2 where #3 is higher than 4
+YELP_train_37,Find all bistros in Pittsburgh,return bistros; return #1 in Pittsburgh
+YELP_train_38,"Find all bakeries in "" Los Angeles """,return bakeries; return #1 in Los Angeles
+YELP_train_39,"Find all Apple Store in "" Los Angeles """,return Apple Stores; return #1 in Los Angeles
+YELP_train_40,Find all Dallas restaurant with a rating above 4.5,return restaurants; return #1 in Dallas; return ratings of #2; return #2 where #3 is higher than 4.5
+YELP_train_41,"Find all breweries in "" Los Angeles """,return breweries; return #1 in Los Angeles
+YELP_train_42,"What neighbourhood is restaurant "" Flat Top Grill "" in ?",return restaurants; return #1 that is Flat Top Grill; return neighbourhood of #2
+YELP_train_43,"Find all tips about "" Vintner Grill "" that received more than 9 likes",return Vintner Grill; return tips of #1; return likes of #2; return number of #3 for each #2; return #2 where #4 is higher than 9
+YELP_train_44,"Find all reviews about "" Kabob Palace "" in year 2014",return Kabob Palace; return reviews of #1; return year of #2; return #2 where #3 is 2014
+YELP_train_45,Find all users who have written tips about businesses in Dallas,return businesses; return #1 in Dallas; return tips about #2; return users who have written #3
+YELP_train_46,"Find all cities in Texas in which there is a restaurant called "" MGM Grand Buffet """,return restaurants; return #1 called MGM Grand Buffet; return cities of #2; return #3 in Texas
+YELP_train_47,Find the users who have given tips on pet groomers,return pet groomers; return tips on #1; return users of #2
+YELP_train_48,List all reviews for bistros with rating less than 1.5,return bistros; return reviews of #1; return ratings of #2; return #2 where #3 is lower than 1.5
+YELP_train_49,In which neighbourhoods has Michelle reviewed a business ?,return businesses; return #1 that Michelle reviewed; return neighbourhoods of #2
+YELP_train_50,"Find all tips for "" Cafe Zinho "" in Texas .",return Cafe Zinho; return #1 in Texas; return tips of #2
+YELP_train_51,List all businesses that are restaurant in Pennsylvania .,return businesses; return #1 that are restaurants; return #2 in Pennsylvania
+YELP_train_52,List all users who reviewed businesses that are restaurant .,return businesses; return #1 that are restaurants; return review of #2; return users of #3
+YELP_train_53,"List all tips for "" Cafe Zinho "" in Pennsylvania in 2010 .",return Cafe Zinho; return #1 in Pennsylvania; return tips of #2; return #3 in 2010
+YELP_train_54,List all users who reviewed businesses that are restaurant in 2010 .,return businesses; return #1 that are restaurants; return review of #2; return #3 in 2010; return users of #4
+YELP_train_55,Find all the tips from a user who has written a review in 2012,return reviews; return #1 in 2012; return users of #2; return tips of #3
+YELP_train_56,Find all reviews for businesses rated 2.5,return businesses; return rate of #1; return #1 where #2 is 2.5; return reviews of #3
+YELP_train_57,find the number of preschools in Madison,return preschools; return #1 in Madison; return number of #2
+YELP_train_58,find the number of restaurant rated more than 3.5,return restaurants; return rate of #1; return #1 where #2 is higher than 3.5; return number of #3
+YELP_train_59,"find the total checkins in Moroccan restaurant in "" Los Angeles """,return restaurants; return #1 that are Moroccan; return #2 in Los Angeles; return checkins of #3; return sum of #4
+YELP_train_60,"find the total checkins in Moroccan restaurant in "" Los Angeles "" on Friday",return restaurants; return #1 that are Moroccan; return #2 in Los Angeles; return checkins of #3; return #4 on Friday; return sum of #5
+YELP_train_61,"find the total checkins in Moroccan restaurant in "" Los Angeles "" per day",return restaurants; return #1 that are Moroccan; return #2 in Los Angeles; return checkins of #3; return days of #4; return sum of #4 for each #5
+YELP_train_62,find the total checkins in Italian delis in each state on Sunday,return delis; return #1 that are Italian; return checkins of #2; return #3 on Sunday; return states of #4; return sum of #4 for each #5
+YELP_train_63,How many reviews has Niloofar written in 2015,return Niloofar; return reviews of #1; return #2 in 2015; return number of #3
+YELP_train_64,what is the average rating given in Michelle reviews,return Michelle; return reviews of #1; return ratings of #2; return average of #3
+YELP_train_65,"What is the number of checkins for "" Cafe Zinho "" on Friday",return Cafe Zinho; return checkins of #1; return #2 on Friday; return number of #3
+YELP_train_66,"how many users reviewed "" Sushi Too "" in Pittsburgh",return Sushi Too; return #1 in Pittsburgh; return review of #2; return users of #3; return number of #4
+YELP_train_67,What is the number of pet groomers in Edinburgh,return pet groomers; return #1 in Edinburgh; return number of #2
+YELP_train_68,How many pet groomers exist in Edinburgh,return pet groomers; return #1 in Edinburgh; return number of #2
+YELP_train_69,What is the number of restaurant in Pittsburgh rated 4.5,return restaurants; return #1 in Pittsburgh; return rate of #2; return #2 where #3 is 4.5
+YELP_train_70,How many tips have been written in 2015,return tips; return #1 written in 2015; return number of #2
+YELP_train_71,What is the total likes on tips from Niloofar,return Niloofar; return tips of #1; return likes of #2; return sum of #3
+YELP_train_72,"What is the total likes on tips about "" Cafe Zinho """,return Cafe Zinho; return tips of #1; return likes of #2; return sum of #3
+YELP_train_73,"What is the total likes on tips from Niloofar about "" Cafe Zinho """,return Niloofar; return tips of #1; return Cafe Zinho; return tips of #3; return tips in both #2 and #4; return likes of #5; return sum of #6
+YELP_train_74,How many tips has Michelle written in 2014,return Michelle; return tips of #1; return #2 written in 2014; return number of #3
+YELP_train_75,How many tips has Michelle written in April,return Michelle; return tips of #1; return #2 written in April; return number of #3
+YELP_train_76,what is the number of restaurant in Texas,return restaurants; return #1 in Texas; return number of #2
+YELP_train_77,"What is the number of dentists in "" Los Angeles "" ?",return dentists; return #1 in Los Angeles; return number of #2
+YELP_train_78,"How many dentists in "" Los Angeles "" have a rating above 4 ?",return dentists; return #1 in Los Angeles; return ratings of #2; return #2 where #3 is higher than 4; return number of #4
+YELP_train_79,"How many people reviewed the restaurant "" Texas de Brazil "" in Dallas Texas ?",return restaurants; return #1 that is Texas de Brazil; return #2 in Dallas Texas; return review of #3; return people of #4; return number of #5
+YELP_train_80,"How many people reviewed "" Bistro Di Napoli "" in 2015 ?",return Bistro Di Napoli; return review of #1; return #2 in 2015; return people of #3; return number of #4
+YELP_train_81,How many restaurant are there in the Hazelwood district of Dallas ?,return restaurants; return #1 in Hazelwood district Dallas; return number of #2
+YELP_train_82,How many Starbucks are there in Dallas Texas ?,return Starbucks; return #1 in Dallas Texas; return number of #2
+YELP_train_83,"How many reviews does "" Acacia Cafe "" have ?",return Acacia Cafe; return reviews of #1; return number of #2
+YELP_train_84,"Find the average number of checkins in restaurant "" Barrio Cafe "" per day",return restaurants; return #1 that is Barrio Cafe; return checkins of #2; return days of #3; return average of #3 for each #4
+YELP_train_85,"How many businesses are there in the "" Stone Meadows "" neighbourhood in Madison ?",return businesses; return neighbourhoods of #1; return #1 where #2 is Stone Meadows; return #3 in Madison; return number of #4 
+YELP_train_86,How many bars in Dallas have a rating above 3.5 ?,return bars; return #1 in Dallas; return ratings of #2; return #2 where #3 is higher than 3.5; return number of #4
+YELP_train_87,What is the number of businesses user Michelle reviews per month ?,return businesses; return reviews of #1; return #2 of user Michelle; return month of #3; return number of #3 for each #4 
+YELP_train_88,How many reviews has Adrienne written ?,return Adrienne; return reviews of #1; return number of #2
+YELP_train_89,How many reviews has Michelle written in March 2014 ?,return Michelle; return reviews of #1; return #2 written in March 2014; return number of #3
+YELP_train_90,How many businesses has Michelle reviewed in 2010 ?,return businesses; return #1 reviewed by Michelle; return #2 reviewed in 2010; return the number of #3
+YELP_train_91,"How many businesses in "" San Diego "" has Christine reviewed in 2010 ?",return businesses; return #1 in San Diego; return #2 reviewed by Christine; return #3 reviewed in 2010; return the number of #4
+YELP_train_92,"How many Target are there in "" Los Angeles "" ?",return Target; return #1 in Los Angeles; return the number of #2
+YELP_train_93,How many users have reviewed Irish Pub in Dallas ?,return Irish Pub; return #1 in Dallas; return review of #2; return users of #3; return number of #4
+YELP_train_94,What is the average rating of reviews written in year 2014 ?,return reviews; return year of #1; return #1 where #2 is 2014; return rating of #3; return the average of #4
+YELP_train_95,"How many people reviewed restaurant "" Vintner Grill "" in 2010 ?",return restaurants; return #1 that is Vintner Grill; return review of #2; return #3 in 2010; return people of #4; return number of #5
+YELP_train_96,"Find the number of reviews on businesses located in "" South Summerlin "" neighbourhood",return businesses; return neighbourhoods of #1; return #1 where #2 is South Summerlin; return reviews of #3; return number of #4
+YELP_train_97,How many escape games are there in Madison ?,return escape games; return #1 in Madison; return number of #2
+YELP_train_98,Find the number of users called Michelle,return users; return #1 called Michelle; return number of #2
+YELP_train_99,Return me the number of businesses that are restaurant .,return businesses; return #1 that are restaurants; return the number of #2
+YELP_train_100,"Return me the number of cities that has "" Panda Express "" .",return Panda Express; return cities of #1; return number of #2
+YELP_train_101,Return me the number of tips that are written by Michelle .,return Michelle; return tips written by #1; return number of #2
+YELP_train_102,Return me the number of tips that are written by Michelle in 2010 .,return Michelle; return tips written by #1; return #2 in 2010; return number of #3
+YELP_train_103,"Find the total checkins in "" Brighton Heights "" neighbourhood",return neighbourhoods; return #1 that is Brighton Heights; return checkins of #2; return sum of #3
+YELP_train_104,Find the total checkins in Sunday,return checkins; return #1 in Sunday; return sum of #2
+YELP_train_105,Find the total number of reviews written in March,return reviews; return #1 written in March; return number of #2
+YELP_train_106,Find the number of tips written in each month,return tips; return months of #1; return number of #1 for each #2
+YELP_train_107,How many neighbourhoods have a business with rating 5 in Madison ?,return businesses; return ratings of #1; return #1 where #2 is 5; return #3 in Madison; return neighbourhoods of #4; return number of #5
+YELP_train_108,Give me all the moroccan restaurant in Texas,return restaurants; return #1 that are moroccan; return #2 in Texas
+YELP_train_109,"List all the Italian restaurant in "" Los Angeles """,return restaurants; return #1 that are Italian; return #2 in Los Angeles
+YELP_train_110,Which Thai restaurant has the most number of reviews,return restaurants; return #1 that are Thai; return reviews of #2; return number of #3 for each #2; return #2 where #4 is highest
+YELP_train_111,which business has the most number of checkins,return businesses; return checkins of #1; return number of #2 for each #1; return #1 where #3 is highest
+YELP_train_112,find the user with the most number of reviews,return users; return reviews of #1; return number of #2 for each #1; return #1 where #3 is highest
+YELP_train_113,which neighbourhood has the most number of businesses in Madison,return businesses; return #1 in Madison; return neighbourhoods of #2; return number of #2 for each #3; return #3 where #4 is highest
+YELP_train_114,Which neighbourhood in Madison has the Italian restaurant with the highest stars,return restaurants; return #1 that are Italian; return #2 in Madison; return stars of #3; return #3 where #4 is highest; return neighbourhood of #5
+YELP_train_115,Find all Chinese restaurant in Dallas with at least 4 stars,return restaurants; return #1 that are Chinese; return #2 in Dallas; return stars of #3; return #3 where #4 is at least 4
+YELP_train_116,Find all Mexican restaurant in Dallas with a rating above 3.5,return restaurants; return #1 that are Mexican; return #2 in Dallas; return ratings of #3; return #3 where #4 is higher than 3.5
+YELP_train_117,Find all restaurant with valet service in Dallas Texas,return restaurants; return #1 with valet service; return #2 in Dallas Texas
+YELP_train_118,Find all Italian restaurant in the Meadowood neighbourhood of Madison,return restaurants; return #1 that are Italian; return neighbourhood of #2; return #2 where #3 is Meadowood; return #4 in Madison
+YELP_train_119,"Find all bars in "" Los Angeles "" with at least 30 reviews and average rating above 3 stars",return bars; return #1 in Los Angeles; return reviews of #2; return number of #3 for each #2; return #2 where #4 is at least 30; return ratings of #3; return average of #6 for each #2; return #2 where #7 is higher than 3; return #2 in both #5 and #8
+YELP_train_120,How many Egyptian restaurant are there in Edinburgh ?,return restaurants; return #1 that are Egyptian; return #2 in Edinburgh; return number of #3
+YELP_train_121,Which Indian restaurant in Dallas has the highest rating ?,return restaurants; return #1 that are Indian; return #2 in Dallas; return ratings of #3; return #3 where #4 is highest
+YELP_train_122,"Find all restaurant that serve seafood in "" Los Angeles """,return restaurants; return #1 that serve seafood; return #2 in Los Angeles
+YELP_train_123,Which Indian restaurant in Dallas has the most number of reviews ?,return restaurants; return #1 that are Indian; return #2 in Dallas; return reviews of #3; return number of #4 for each #3; return #3 where #5 is highest
+YELP_train_124,Which Italian restaurant in Dallas has the highest rating ?,return restaurants; return #1 that are Italian; return #2 in Dallas; return ratings of #3; return #3 where #4 is highest
+YELP_train_125,Find users whose average review rating is below 3,return users; return review ratings of #1; return average of #2 for each #1; return #1 where #3 is lower than 3
+YELP_train_126,Find the business with the most number of reviews in April,return businesses; return reviews of #1; return #2 in April; return the number of #3 for each #1; return #1 where #4 is highest
+YELP_train_127,Find the business which has the most number of categories,return businesses; return categories of #1; return the number of #2 for each #1; return #1 where #3 is highest

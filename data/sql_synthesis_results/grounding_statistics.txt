@@ -1,0 +1,51 @@
+Academic all examples: 195
+Academic all examples correctly grounded: 155
+
+Geo880 all examples: 877
+Geo880 all examples correctly grounded: 736
+
+IMDB all examples: 132
+IMDB all examples correctly grounded: 116
+
+Yelp all examples: 128
+Yelp all examples correctly grounded: 100
+
+Spider train all examples: 6955
+Spider train all examples correctly grounded: 5375
+
+Spider dev all examples: 1027
+Spider dev non-empty examples correctly grounded: 793
+
+Total all examples: 9313
+Total all examples correctly grounded: 7249
+
+----------
+
+Academic non-empty examples: 183
+Academic non-empty examples correctly grounded: 148
+
+Geo880 non-empty examples: 846
+Geo880 non-empty examples correctly grounded: 707
+
+IMDB non-empty examples: 113
+IMDB non-empty examples correctly grounded: 101
+
+Yelp non-empty examples: 66
+Yelp non-empty examples correctly grounded: 54
+
+Spider train non-empty examples: 6701
+Spider train non-empty examples correctly grounded: 5137
+
+Spider dev non-empty examples: 978
+Spider dev non-empty examples correctly grounded: 745
+
+Total non-empty examples: 8903
+Total non-empty examples correctly grounded: 6892
+
+----------
+
+Geo880 Pred. non-empty examples: 288
+Geo880 Pred. non-empty examples correctly grounded: 277
+
+Spider dev Pred. non-empty examples: 978
+Spider dev Pred. non-empty examples correctly grounded: 750

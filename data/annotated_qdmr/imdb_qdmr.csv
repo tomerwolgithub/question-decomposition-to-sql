@@ -1,0 +1,132 @@
+question_id,question_text,decomposition
+IMDB_train_0,"What year is the movie "" Dead Poets Society "" from ?	",return movies; return #1 that is Dead Poets Society; return year of #1
+IMDB_train_1,"What year was "" Ellen Page "" born ?	",return Ellen Page; return year born of #1
+IMDB_train_2,"What is the nationality of the actress "" Ellen Page "" ?	",return actresses; return #1 that is Ellen Page; return nationality of #2
+IMDB_train_3,"Find all movies produced in 2015	",return movies; return #1 produced in 2015
+IMDB_train_4,"Find all actors born in "" Los Angeles ""	",return actors; return #1 born in Los Angeles
+IMDB_train_5,"Find all actors who are from Canada	",return actors; return #1 from Canada
+IMDB_train_6,"Find all actors who were born in 1984	",return actors; return #1 born in 1984
+IMDB_train_7,"In what year was "" Benedict Cumberbatch "" born	",return Benedict Cumberbatch; return year born of #1
+IMDB_train_8,"What is the nationality of the actor "" Christoph Waltz "" ?	",return Christoph Waltz; return nationality of #1
+IMDB_train_9,"When was "" Kevin Spacey "" born ?	",return Kevin Spacey; return when was #1 born
+IMDB_train_10,"In what year was "" Kevin Spacey "" born ?	",return Kevin Spacey; return year born of #1
+IMDB_train_11,"Where is the birth place of "" Kevin Spacey ""	",return Kevin Spacey; return birth place of #1
+IMDB_train_12,"In what city was "" Kevin Spacey "" born ?	",return Kevin Spacey; return city #1 was born in
+IMDB_train_13,"What is the nationality of "" Kevin Spacey "" ?	",return Kevin Spacey; return nationality of #1
+IMDB_train_14,"Find all actors from Italy	",return actors; return #1 from Italy
+IMDB_train_15,"Find all actors born in Milan	",return actors; return #1 born in Milan
+IMDB_train_16,"How much was the budget of "" Finding Nemo ""	",return Finding Nemo; return budget of #1
+IMDB_train_17,"Which actors were born in Tehran	",return actors; return #1 born in Tehran
+IMDB_train_18,"Find all movies directed by "" Steven Spielberg "" after 2006	",return movies; return #1 directed by Steven Spielberg; return #2 after 2006
+IMDB_train_19,"Who is the director of the movie "" Catch Me If You Can "" ?	",return Catch Me If You Can; return director of #1
+IMDB_train_20,"Find the actor who played "" Captain Miller "" in the movie "" Saving Private Ryan ""	",return Saving Private Ryan; return actors of #1; return #2 who played Captain Miller
+IMDB_train_21,"What is the genre of the movie "" Jurassic Park "" ?	",return Jurassic Park; return movie genre of #1
+IMDB_train_22,"Who was the director of the movie Joy from 2015 ?	",return movies; return #1 that is Joy; return #2 from 2015; return director of #3
+IMDB_train_23,"Who acted "" John Nash "" in the movie "" A Beautiful Mind "" ?	",return A Beautiful Mind; return who acted in #1; return #2 who acted John Nash
+IMDB_train_24,"Find all movies written by "" Matt Damon ""	",return movies; return #1 written by Matt Damon
+IMDB_train_25,"Find all movies written and produced by "" Woody Allen ""	",return movies; return #1 written by Woody Allen; return #2 produced by Woody Allen
+IMDB_train_26,"Find all movies featuring "" Kate Winslet ""	",return Kate Winslet; return movies featuring #1
+IMDB_train_27,"What was the budget of the movie Juno from 2007 ?	",return the movie Juno; return #1 from 2017; return budget of #2
+IMDB_train_28,"Find all comedies produced in year 2015	",return comedies; return produced year of #1; return #1 where #2 is 2015
+IMDB_train_29,"Who was the actor that played "" Vinny Gambini "" in the movie "" My Cousin Vinny "" ?	",return the movie My Cousin Vinny; return actors of #1; return #2 that played Vinny Gambini
+IMDB_train_30,"Find all actors born in "" Los Angeles "" after 1980	",return actors; return #1 born in Los Angeles; return #2 born after 1980
+IMDB_train_31,"Find all movies by directors born in "" Los Angeles ""	",return directors; return #1 born in Los Angeles; return movies of #2
+IMDB_train_32,"What company produced the movie "" Juno "" ?	",return the movie Juno; return company that produced #1
+IMDB_train_33,"Find all movies that were produced by Netflix	",return movies; return #1 produced by Netflix
+IMDB_train_34,"Find all actors who were born in "" New York City "" in 1984	",return actors; return #1 born in New York City; return #2 born in 1984
+IMDB_train_35,"Find all movies about Persians	",return Persians; return movies about #1
+IMDB_train_36,"Who are the actors born in "" New York City "" after 1990 ?	",return actors; return #1 born in New York City; return #2 born after 1990
+IMDB_train_37,"Find all movies produced by "" Walt Disney "" after 2010	",return movies; return #1 produced by Walt Disney; return #2 after 2010
+IMDB_train_38,"Find all movies featuring "" Benedict Cumberbatch ""	",return Benedict Cumberbatch; return movies featuring #1
+IMDB_train_39,"Which movies did "" Alfred Hitchcock "" direct ?	",return Alfred Hitchcock; return movies that #1 direct
+IMDB_train_40,"Find all movies about Autism	",return Autism; return movies about #1
+IMDB_train_41,"Find all movies directed by "" Woody Allen "" and featuring "" Scarlett Johansson ""	",return movies; return #1 directed by Woody Allen; return #1 featuring Scarlett Johansson; return #1 in both #2 and #3
+IMDB_train_42,"What are all the tv series created by "" Shonda Rhimes "" ?	",return tv series; return #1 created by Shonda Rhimes
+IMDB_train_43,"Who acts "" Olivia Pope "" in the series Scandal ?	",return the series Scandal; return who acts in #1; return #2 that acts Olivia Pope
+IMDB_train_44,"What are all the movies directed by "" Quentin Tarantino "" featuring "" Christoph Waltz "" ?	",return movies; return #1 directed by Quentin Tarantino; return #2 featuring Christoph Waltz
+IMDB_train_45,"Who directed the movie "" Inglourious Basterds "" ?	",return the movie Inglourious Basterds; return who directed #1
+IMDB_train_46,"Who is the writer of the movie "" Django Unchained ""	",return the movie Django Unchained; return the writer of #1
+IMDB_train_47,"What are the series featuring "" Kerry Washington "" ?	",return Kerry Washington; return series featuring #1
+IMDB_train_48,"What are all the movies featuring "" Kerry Washington "" ?	",return Kerry Washington; return movies featuring #1
+IMDB_train_49,"Find the directors of all movies featuring "" Kate Winslet ""	",return Kate Winslet; return movies featuring #1; return directors of #2
+IMDB_train_50,"Find the producers of all movies in which "" Kate Winslet "" is an actor	",return movies; return actors of #1; return #1 where #2 is Kate Winslet; return producers of #3
+IMDB_train_51,"What are the series in which "" Scott Foley "" is an actor ?	",return series; return actors of #1; return #1 where #2 is Scott Foley
+IMDB_train_52,"What company produced the series Scandal ?	",return companies; return #1 that produced Scandal
+IMDB_train_53,"Find all tv series produced by Netflix	",return tv series; return #1 produced by Netflix
+IMDB_train_54,"Find all movies produced by Netflix	",return movies; return #1 produced by Netflix
+IMDB_train_55,"Find all movies featuring "" Kevin Spacey ""	",return movies; return #1 featuring Kevin Spacey
+IMDB_train_56,"Who is the director of the series "" House of Cards "" produced by Netflix ?	",return series; return #1 produced by Netflix; return #2 that is House of Cards; return director of #3
+IMDB_train_57,"Who is the director of the tv series "" House of Cards "" from 2013 ?	",return tv series; return #1 from 2013; return #2 that is House of Cards; return director of #3
+IMDB_train_58,"Find all movies in which "" Robin Wright "" appears	",return Robin Wright; return movies of #1
+IMDB_train_59,"Find all the female actors from Austin	",return actors; return #1 that are female; return #2 from Austin
+IMDB_train_60,"Find all actors from Austin born after 1980	",return actors; return #1 from Austin; return #1 born after 1980; return #1 in both #2 and #3
+IMDB_train_61,"How many movies are there that are directed by "" Steven Spielberg "" and featuring "" Matt Damon "" ?	",return movies; return #1 directed by Steven Spielberg; return #2 featuring Matt Damon; return number of #3
+IMDB_train_62,"Find all actors from Italy born after 1980	",return actors; return #1 from Italy; return #2 born after 1980
+IMDB_train_63,"Find all the female actors born in "" New York City "" after 1980	",return actors; return #1 that are female; return #2 born in New York City; return #3 born after 1980
+IMDB_train_64,"Find all the female actors in the movie "" Saving Private Ryan ""	",return the movie Saving Private Ryan; return actors of #1; return #2 that are female
+IMDB_train_65,"Who acts as "" Alan Turing "" in the movie "" The Imitation Game "" ?	",return the movie The Imitation Game; return who acts in #1; return #2 that acts as Alan Turing
+IMDB_train_66,"Who is the actor playing "" Alan Turing "" in "" The Imitation Game "" ?	",return The Imitation Game; return actors of #1; return #2 playing Alan Turing
+IMDB_train_67,"What year was the movie "" The Imitation Game "" produced	",return the movie The Imitation Game; return produced year of #1
+IMDB_train_68,"Find all movies about Iraq war	",return Iraq war; return movies about #1
+IMDB_train_69,"Find all the directors who are from Afghanistan	",return directors; return #1 from Afghanistan
+IMDB_train_70,"Give me the name of all the actors from Afghanistan	",return actors; return #1 from Afghanistan; return names of #2
+IMDB_train_71,"Who is the writer of "" The Truman Show ""	",return The Truman Show; return writer of #1
+IMDB_train_72,"List all the Sci-Fi movies which released in 2010	",return movies; return #1 that are Sci-Fi; return #2 released in 2010
+IMDB_train_73,"Find the actors who played in the movie "" Camp X-Ray ""	",return the movie Camp X-Ray; return actors of #1
+IMDB_train_74,"Find all actors from Canada who acted in "" James Bond "" movies	",return James Bond movies; return actors of #1; return #2 from Canada
+IMDB_train_75,"List "" James Bond "" directors	",return James Bond; return directors of #1
+IMDB_train_76,"find all films in which "" Rowan Atkinson "" acted as "" Mr. Bean ""	",return Mr. Bean; return #1 acted by Rowan Atkinson; return films of #2
+IMDB_train_77,"List all the movies directed by "" Asghar Farhadi "" in which "" Taraneh Alidoosti "" played	",return movies; return #1 directed by Asghar Farhadi; return #2 where Taraneh Alidoosti played
+IMDB_train_78,"where is the director of "" The Past "" from	",return The Past; return director of #1; return where is #2 from
+IMDB_train_79,"who acted the role of "" Mr. Bean ""	",return who acted; return roles of #1; return #1 where #2 is Mr. Bean
+IMDB_train_80,"what are the genres of movies directed by "" Asghar Farhadi ""	",return movies; return #1 directed by Asghar Farhadi; return genres of #2
+IMDB_train_81,"Which movie had the character "" Daffy Duck ""	",return movies; return characters of #1; return #1 where #2 is Daffy Duck
+IMDB_train_82,"which company funded the "" Mickey Mouse "" series	",return the Mickey Mouse series; return company that funded #1
+IMDB_train_83,"What are the major roles in the movie "" Daddy Long Legs ""	",return the movie Daddy Long Legs; return major roles of #1
+IMDB_train_84,"List all male directors who worked with the "" NBCUniversal "" company	",return companies; return #1 that is NBCUniversal; return directors of #2; return #3 that are male
+IMDB_train_85,"What are the movies related to nuclear weapons	",return nuclear weapons; return movies of #1
+IMDB_train_86,"List all the directors of movies about nuclear weapons	",return nuclear weapons; return movies about #1; return directors of #2
+IMDB_train_87,"What is the number of movies in which "" Jennifer Aniston "" acted after 2010 ?	",return Jennifer Aniston; return movies of #1; return #2 after 2010; return number of #3
+IMDB_train_88,"What is the number of actors in the movie "" Grumpier Old Men "" ?	",return the movie Grumpier Old Men; return actors of #1; return number of #2
+IMDB_train_89,"How many movies did "" Alfred Hitchcock "" direct ?	",return movies; return #1 that Alfred Hitchcock direct; return number of #2
+IMDB_train_90,"How many movies were produced in the year 2012 ?	",return movies; return produced year of #1; return #1 where #2 is 2012; return number of #3
+IMDB_train_91,"What is the number of movies directed by "" Woody Allen "" per year ?	",return movies; return #1 directed by Woody Allen; return year of #2; return the number of #2 for each #3
+IMDB_train_92,"What is the number of movies produced in 2013 ?	",return movies; return #1 produced in 2013; return number of #2
+IMDB_train_93,"How many movies did "" Ronald Reagan "" act in ?	",return movies; return #1 that Ronald Reagan act in; return number of #2
+IMDB_train_94,"How many actors were born in "" Los Angeles "" after 2000 ?	",return actors; return #1 born in Los Angeles; return #2 born after 2000; return number of #3
+IMDB_train_95,"How many movies did "" Humphrey Bogart "" act in before 1942 ?	",return movies; return #1 that Humphrey Bogart act in; return #1 before 1942; return #1 in both #2 and #3; return number of #4
+IMDB_train_96,"What is the number of movies that "" Brad Pitt "" acts in per year ?	",return movies; return #1 that Brad Pitt acts in; return years of #2; return the number of #2 for each #3
+IMDB_train_97,"What is the number of movies in which "" Tom Cruise "" acted ?	",return movies; return #1 that Tom Cruise acted in; return number of #2
+IMDB_train_98,"How many movies about Iraq war were produced in 2015 ?	",return Iraq war; return movies about #1; return #2 produced in 2015; return number of #3
+IMDB_train_99,"How many movies about Persians were released after 1990 ?	",return Persians; return movies about #1; return #2 released after 1990; return number of #3
+IMDB_train_100,"How many movies did "" Matt Damon "" direct ?	",return movies; return #1 that Matt Damon direct; return number of #2
+IMDB_train_101,"How many movies did "" Quentin Tarantino "" direct after 2010 ?	",return movies; return #1 that Quentin Tarantino direct; return #2 after 2010; return number of #3
+IMDB_train_102,"How many movies did "" Quentin Tarantino "" direct before 2010 ?	",return movies; return #1 that Quentin Tarantino direct; return #2 before 2010; return number of #3
+IMDB_train_103,"How many movies did "" Quentin Tarantino "" direct before 2002 and after 2010 ?	","return movies; return #1 that Quentin Tarantino direct; return #2 before 2002; return #2 after 2010; return #3 , #4; return number of #5"
+IMDB_train_104,"What is the number of movies featuring "" Brad Pitt "" ?	",return movies; return #1 featuring Brad Pitt; return number of #2
+IMDB_train_105,"How many movies did "" Steven Spielberg "" direct ?	",return movies; return #1 that Steven Spielberg direct; return number of #2
+IMDB_train_106,"How many movies did Netflix produce ?	",return movies; return #1 that Netflix produce; return number of #2
+IMDB_train_107,"How many female actors were born in "" New York City "" after 1980 ?	",return actors; return #1 that are female; return #2 born in New York City; return #3 born after 1980; return number of #4
+IMDB_train_108,"How many actors are in the movie "" Saving Private Ryan "" ?	",return the movie Saving Private Ryan; return actors of #1; return number of #2
+IMDB_train_109,"How many movies did "" Shahab Hosseini "" act in	",return movies; return #1 that Shahab Hosseini act in; return number of #2
+IMDB_train_110,"find the number of actors from Iran who played in "" Jim Jarmusch "" movies	",return Jim Jarmusch; return movies of #1; return actors of #2; return #3 from Iran; return number of #4
+IMDB_train_111,"How many companies participated in producing "" Camp X-Ray ""	",return Camp X-Ray; return companies producing #1; return number of #2
+IMDB_train_112,"How many actors from China have acted in "" Rush Hour 3 ""	",return Rush Hour 3; return actors of #1; return #2 from China; return number of #3
+IMDB_train_113,"Find the number of companies which worked with "" Gabriele Ferzetti ""	",return Gabriele Ferzetti; return companies that worked with #1; return number of #2
+IMDB_train_114,"Find all movies that star both "" Angelina Jolie "" and "" Brad Pitt ""	",return Angelina Jolie; return movies of #1; return Brad Pitt; return movies of #3; return movies in both #2 and #4
+IMDB_train_115,"Find all actors who acted in the same movie as "" Tom Hanks ""	",return movies; return #1 that Tom Hanks acted in; return actors of #2
+IMDB_train_116,"What movies have the same director as the movie "" Revolutionary Road "" ?	",return the movie Revolutionary Road; return director of #1; return movies of #2
+IMDB_train_117,"Find all movies featuring "" Benedict Cumberbatch "" and "" Keira Knightley ""	",return Benedict Cumberbatch; return movies of #1; return Keira Knightley; return movies of #3; return movies in both #2 and #4
+IMDB_train_118,"Find all movies featuring both "" Matt Damon "" and "" Ben Affleck ""	",return Matt Damon; return movies of #1; return Ben Affleck; return movies of #3; return movies in both #2 and #4
+IMDB_train_119,"What is the maximum number of movies in which "" Brad Pitt "" act in a given year ?	",return Bradd Pitt; return movies of #1; return years of #2; return number of #2 for each #3; return highest of #4
+IMDB_train_120,"Find the actor with most number of films	",return actors; return films of #1; return number of #2 for each #1; return #1 where #3 is highest
+IMDB_train_121,"Who acted in the most number of movies directed by "" Jim Jarmusch ""	",return movies; return #1 directed by Jim Jarmusch; return who acted in #2; return number of #2 for each #3; return #3 where #4 is highest
+IMDB_train_122,"Find the movie which is classified in the most number of genres	",return movies; return genres of #1; return the number of #2 for each #1; return #1 where #3 is highest
+IMDB_train_123,"which movie has the most number of actors from China ?	",return actors; return #1 from China; return movies of #2; return the number of #2 for each #3; return #3 where #4 is highest
+IMDB_train_124,"Find the actors who played in the latest movie by "" Quentin Tarantino ""	",return movies; return #1 by Quentin Tarantino; return #2 that is latest; return actors of #3
+IMDB_train_125,"Find the name and budget of the latest movie by "" Quentin Tarantino ""	","return movies; return #1 by Quentin Tarantino; return #2 that is latest; return name of #3; return budget of #3; return #4 , #5"
+IMDB_train_126,"Find all movies featuring "" Jason Robards "" and "" Woody Strode ""	",return Jason Robards; return movies of #1; return Woody Strode; return movies of #3; return movies in both #2 and #4
+IMDB_train_127,"Who is directed the latest movie by "" NBCUniversal ""	",return NBCUniversal; return movies of #1; return #2 that is latest; return Who directed #3
+IMDB_train_128,"What is the latest movie by "" Jim Jarmusch ""	",return movies; return #1 by Jim Jarmusch; return #2 that is latest
+IMDB_train_129,"Which producer has worked with the most number of directors ?	",return directors; return producers that worked with #1; return the number of #1 for each #2; return #2 where #3 is highest
+IMDB_train_130,"Find the latest movie which "" Gabriele Ferzetti "" acted in	",return movies; return #1 that Gabriele Ferzetti acted in; return #2 that is latest
