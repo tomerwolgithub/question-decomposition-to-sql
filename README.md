@@ -114,15 +114,9 @@ TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/qdmr_parser/test.
 ```
 
 ### Text-to-SQL 
-### Text-to-QDMR
+#### Gold SQL baseline
+#### QDMR baseline (synthesized SQL)
 
-### Data Setup
-
-Create a directory containing all relevant databases in sqlite format:
-```
-cd question-decomposition-to-sql
-mkdir databases
-```
 
 ## Experiments ⚗️
 
