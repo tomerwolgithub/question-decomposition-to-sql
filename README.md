@@ -68,6 +68,15 @@ Convert the MySQL databases of Academic, IMDB, Yelp and GeoQuery to sqlite forma
 Our SQL synthesis is given examples of `<QDMR, database, answer>` and automatically generates a SQL that executes to the correct answer.
 The QDMR decompositions are either manually annotated or automatically predicted by a trained QDMR parser.
 
+Beging by copying all relevant sqlite databases to the `data_generation` directory.
+```bash
+mkdir data_generation/data
+mkdir data_generation/data/spider_databases
+# copy Spider databases here
+mkdir data_generation/data/other_databases
+# copy Academic, IMDB, Yelp and Geo databases here
+```
+
 1. The SQL synthesis expect a formatted `csv` file, see [example](). Note that gold SQL is only used for computing the gold answer.
 2. This may take several hours, as multiple candidate SQL are executed on their respective database.
 3. Synthesize SQL from the `<QDMR, database, answer>` examples:
