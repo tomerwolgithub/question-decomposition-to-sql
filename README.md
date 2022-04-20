@@ -94,8 +94,8 @@ The SQL synthesized using QDMR + answer supervision is available for each datase
 The QDMR parser is a T5-large sequence-to-sequence model mapping NL questions to question decompositions. The model expects as input two `csv` files as its train and dev sets. Use the files from the downloaded Break dataset to train the parser. Make sure that you are in the relevant python environment (`requirements_qdmr_parser.txt`).
 To train the QDMR parser configure the following parameters in `train.py`:
 * `data_dir`: path to the directory containing the NL to QDMR datasets
-* `training_set_file`: name of the train set `csv` (e.g., Break train)
-* `dev_set_file`: name of the dev set `csv` (e.g., Break dev)
+* `training_set_file`: name of the train set `csv` (e.g. Break train)
+* `dev_set_file`: name of the dev set `csv` (e.g. Break dev)
 * `output_dir`: directory to store the trained model
 
 After configuration, train the model as follows:
