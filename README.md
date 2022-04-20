@@ -125,5 +125,5 @@ For the external datasets and databases used throughput our experiments:
 * The Break dataset [(Wolfson et al., 2020)](https://allenai.github.io/Break/) is under the MIT License. 
 * Spider [(Yu et al., 2018)](https://yale-lily.github.io/spider) is under the CC BY-SA 4.0 License. 
 * Geo880 [(Zelle and Mooney, 1996)](https://www.aaai.org/Library/AAAI/1996/aaai96-156.php) is available under the GNU General Public License 2.0.
-* The text-to-SQL versions of Academic [(Li and Jagadish, 2014)](https://www.vldb.org/pvldb/vol8/p73-li.pdf) and Geo880 were made publicly available by [Finegan-Dollak et al. (2018)](https://github.com/jkkummerfeld/text2sql-data/)
-* The IMDB and YELP datasets were publicly released by [Yaghmazadeh et al. (2017)](goo.gl/DbUBMM)
+* The text-to-SQL versions of Academic [(Li and Jagadish, 2014)](https://www.vldb.org/pvldb/vol8/p73-li.pdf) and Geo880 were made publicly available by [Finegan-Dollak et al. (2018)](https://github.com/jkkummerfeld/text2sql-data/).
+* The IMDB and YELP datasets were publicly released by [Yaghmazadeh et al. (2017)](goo.gl/DbUBMM).
