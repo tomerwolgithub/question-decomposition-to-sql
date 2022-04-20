@@ -80,6 +80,9 @@ python data_generation/main.py \
 
 ### Synthesized Data
 The evaluation sets generated with BPB for the development sets of DROP, HotpotQA, and IIRC are available for download under the data directory (one file per dataset). Each zip file includes the following files:
+The SQL synthesized using QDMR + answer supervision is available for each dataset in the `data/sql_synthesis_results/ directory. 
+* `data/sql_synthesis_results/gold_qdmr_supervision`: contains SQL synthesized using gold QDMR that was manually annotated
+* `data/sql_synthesis_results/predicted_qdmr_supervision`: contains SQL synthesized using QDMR predicted by a trained parser
 
 
 
