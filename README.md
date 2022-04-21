@@ -8,12 +8,12 @@ This repository contains the code and data used in our paper:
 
 * **Structure:**
 	* [**Setup**](#setup-)
-	* [**Resources**](https://)
-	* [**Data Generation**](https://)
-	* [**Models**](https://)
-	* [**Experiments**](https://)
-	* [**Citation**](https://)
-	* [**License**](https://)
+	* [**Resources**](#download-resources-%EF%B8%8F)
+	* [**Data Generation**](#data-generation-)
+	* [**Models**](#models-%EF%B8%8F)
+	* [**Experiments**](#experiments-%EF%B8%8F)
+	* [**Citation**](#citation-)
+	* [**License**](#license)
 
 
 ## Setup 🙌🏼
