@@ -193,6 +193,15 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 
 ### Data
 
+#### Gold SQL:
+For the text-to-SQL experiments, models trained on gold text-to-SQL get as input `json` files containine the train, dev and test examples. For Spider we use the original train and dev files. For Geo880, Academic, IMDB and Yelp we format the original dataset in `json` file available [here]().
+
+#### QDMR Synthesized SQL:
+For the QDMR text-to-SQL models, we do not train directly on the synthesized SQL. Instead, we train on an encoded version of the QDMR with phrase-column linking. This representation can be automatically mapped to SQL to evaluate its execution.
+This representation is produced using the output of the data generation phase. The procedure `encoded_grounded_qdmr` in `src/data_generation/write_encoding.py` recieves as input the output `json` file containing the synthesized SQL examples. It encodes them into lisp style formulas of QDMR steps and their relevant database linking found in the SQL synthesis phase.
+For convenience you can download the encoded QDMR training files from [here]().
+
+
 ### Configurations
 
 Configurations for training the text-to-SQL models on **Spider**. Other parameters are fixed in `train.py`.
