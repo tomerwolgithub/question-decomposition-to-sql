@@ -75,9 +75,9 @@ mkdir data_generation/data/spider_databases # copy Spider databases here
 mkdir data_generation/data/other_databases # copy Academic, IMDB, Yelp and Geo databases here
 ```
 
-1. The SQL synthesis expect a formatted `csv` file, see [example](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/sql_synthesis_results/sql_synthesis_input_example.csv). Note that gold SQL is only used for computing the gold answer.
-2. This may take several hours, as multiple candidate SQL are executed on their respective database.
-3. Synthesize SQL from the `<QDMR, database, answer>` examples:
+1. The SQL synthesis expects a formatted `csv` file, see [example](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/sql_synthesis_results/sql_synthesis_input_example.csv). Note that the SQL query in these files is only used to compute the answer.
+2. This may take several hours, as multiple candidate SQL are being executed on their respective database.
+3. To synthesize SQL from the `<QDMR, database, answer>` examples run:
 
 ```bash
 python data_generation/main.py \
@@ -87,11 +87,9 @@ python data_generation/main.py \
 ```
 
 ### Synthesized Data
-The evaluation sets generated with BPB for the development sets of DROP, HotpotQA, and IIRC are available for download under the data directory (one file per dataset). Each zip file includes the following files:
 The SQL synthesized using QDMR + answer supervision is available for each dataset in the [`data/sql_synthesis_results/`](https://github.com/tomerwolgithub/question-decomposition-to-sql/tree/main/data/sql_synthesis_results) directory. 
-* `data/sql_synthesis_results/gold_qdmr_supervision`: contains SQL synthesized using gold QDMR that was manually annotated
-* `data/sql_synthesis_results/predicted_qdmr_supervision`: contains SQL synthesized using QDMR predicted by a trained parser
-
+* `data/sql_synthesis_results/gold_qdmr_supervision`: contains SQL synthesized using gold QDMRs that are manually annotated
+* `data/sql_synthesis_results/predicted_qdmr_supervision`: contains SQL synthesized using QDMRs predicted by a trained parser
 
 
 
