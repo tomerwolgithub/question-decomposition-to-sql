@@ -68,7 +68,7 @@ Convert the MySQL databases of Academic, IMDB, Yelp and GeoQuery to sqlite forma
 Our SQL synthesis is given examples of `<QDMR, database, answer>` and automatically generates a SQL that executes to the correct answer.
 The QDMR decompositions are either manually annotated or automatically predicted by a trained QDMR parser.
 
-Beging by copying all relevant sqlite databases to the `data_generation` directory.
+Begin by copying all relevant sqlite databases to the `data_generation` directory.
 ```bash
 mkdir data_generation/data
 mkdir data_generation/data/spider_databases
@@ -100,7 +100,7 @@ The SQL synthesized using QDMR + answer supervision is available for each datase
 ## Models 🗂️
 
 ### QDMR Parser
-The QDMR parser is a T5-large sequence-to-sequence model mapping NL questions to question decompositions. The model expects as input two `csv` files as its train and dev sets. Use the files from the downloaded Break dataset to train the parser. Make sure that you are in the relevant python environment (`requirements_qdmr_parser.txt`).
+The QDMR parser is a T5-large sequence-to-sequence model finetuned to map NL questions to question decompositions. The model expects as input two `csv` files as its train and dev sets. Use the files from the downloaded Break dataset to train the parser. Make sure that you are in the relevant python environment (`requirements_qdmr_parser.txt`).
 To train the QDMR parser configure the following parameters in `train.py`:
 * `data_dir`: path to the directory containing the NL to QDMR datasets
 * `training_set_file`: name of the train set `csv` (e.g. Break train)
@@ -123,8 +123,31 @@ TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/qdmr_parser/test.
 ```
 
 ### Text-to-SQL 
-#### 1. Gold SQL baseline
-#### 2. QDMR baseline (synthesized SQL)
+The text-to-SQL models are all T5-large sequence-to-sequence models finetuned to map questions to executable SQL queries.
+We compare our baselines, trained on gold SQL queries annotated by experts, to our synthesized SQL from QDMR and answer supervision.
+
+#### 1. Setup directory
+Setup the data for the text-to-SQL experiments as follows:
+```
+data
+├── databases
+│   └── geo
+│       └── geo.sqlite
+|   └── ...
+└── queries
+    └── geo
+        ├── geo_gold_train.json
+	└── geo_qdmr_train.json
+	└── geo_gold_dev.json
+	└── geo_gold_test.json
+	└── geo_qdmr_train.sql
+	└── geo_gold_dev.sql
+	└── geo_gold_test.sql
+|   └── ...
+```
+
+#### 2. Gold SQL baseline
+#### 3. QDMR baseline (synthesized SQL)
 
 
 ## Experiments ⚗️
