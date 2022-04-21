@@ -296,6 +296,7 @@ bibtex
 
 ## License 
 This repository and its data is released under the MIT license.
+
 For the licensing of all external datasets and databases used throughout our experiments:
 * The Break dataset [(Wolfson et al., 2020)](https://allenai.github.io/Break/) is under the MIT License. 
 * Spider [(Yu et al., 2018)](https://yale-lily.github.io/spider) is under the CC BY-SA 4.0 License. 
