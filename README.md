@@ -128,7 +128,7 @@ We compare our baselines, trained on gold SQL queries annotated by experts, to o
 
 #### 1. Setup directory
 Setup the data for the text-to-SQL experiments as follows:
-```
+```bash
 data
 ├── databases
 │   └── tables.json		# Spider tables.json
