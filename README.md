@@ -132,8 +132,14 @@ Setup the data for the text-to-SQL experiments as follows:
 data
 ├── databases
 │   └── tables.json		# Spider tables.json
+│   └── academic			
+│       └── academic.sqlite	# Sqlite version of the populated Academic database (see downloads)
 │   └── geo			
 │       └── geo.sqlite		# Sqlite version of the populated Geo database (see downloads)
+│   └── imdb			
+│       └── imdb.sqlite		# Sqlite version of the populated IMDB database (see downloads)
+│   └── yelp			
+│       └── yelp.sqlite		# Sqlite version of the populated Yelp database (see downloads)
 │   └── spider_databases 	# Spider databases directory
 │       └── activity_1
 │           └── activity_1.sqlite
@@ -154,6 +160,7 @@ data
 	└── spider_gold_train.sql 	# Spider training set SQL queries
 	└── spider_gold_dev.sql 	# Spider dev set SQL queries
 ```
+Most of 
 
 #### 2. Gold SQL baseline
 #### 3. QDMR baseline (synthesized SQL)
@@ -162,6 +169,7 @@ data
 ## Experiments ⚗️
 
 ### Data
+### Configuration
 ### Evaluation
 
 ## Citation ✍🏽
