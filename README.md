@@ -194,13 +194,21 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 ### Data
 
 #### Gold SQL:
-For the text-to-SQL experiments, models trained on gold text-to-SQL get as input `json` files containine the train, dev and test examples. For Spider we use the original train and dev files. For Geo880, Academic, IMDB and Yelp we format the original dataset in `json` file available [here]().
+For the text-to-SQL experiments, models trained on gold text-to-SQL get as input `json` files containine the train, dev and test examples. For Spider we use the original train and dev files. For Geo880, Academic, IMDB and Yelp we format the original dataset in `json` file available [here](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/text_to_sql/gold_sql_datasets.zip).
 
 #### QDMR Synthesized SQL:
 For the QDMR text-to-SQL models, we do not train directly on the synthesized SQL. Instead, we train on an encoded version of the QDMR with phrase-column linking. This representation can be automatically mapped to SQL to evaluate its execution.
 We use the output of the data generation phase as input to `encoded_grounded_qdmr` in `src/data_generation/write_encoding.py`. It recieves the `json` file containing the synthesized SQL examples and encodes them as lisp style formulas of QDMR steps and their relevant database linking (from the SQL synthesis).
 
-For convenience, you may download the encoded QDMR training sets used in our experiments [here]().
+For convenience, you may download the encoded QDMR training sets used in our experiments [here](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/text_to_sql/encoded_qdmr_datasets.zip). These include:
+
+ * `qdmr_ground_enc_spider_train.json`: 5,349 synthesized examples using gold QDMR and answer supervision
+ * `qdmr_ground_enc_predicted_spider_train_few_shot`: 5,075 synthesized examples using 700 gold QDMRs, predicted QDMR and answer supervision
+ * `qdmr_ground_enc_predicted_spider_train_30_db.json`: 1,129 synthesized examples using predicted QDMR and answer supervision
+ * `qdmr_ground_enc_predicted_spider_train_40_db.json`: 1,440 synthesized examples using predicted QDMR and answer supervision
+ * `qdmr_ground_enc_predicted_spider_train_40_db_V2.json`: 1,552 synthesized examples using predicted QDMR and answer supervision
+ * `qdmr_ground_enc_geo880_train.json`: 454 synthesized examples using gold QDMR and answer supervision
+ * `qdmr_ground_enc_predicted_geo_train_zero_shot.json`: 432 synthesized examples using predicted QDMR and answer supervision
 
 
 ### Configurations
@@ -288,7 +296,7 @@ bibtex
 
 ## License 
 This repository and its data is released under the MIT license.
-For the external datasets and databases used throughout our experiments:
+For the licensing of all external datasets and databases used throughout our experiments:
 * The Break dataset [(Wolfson et al., 2020)](https://allenai.github.io/Break/) is under the MIT License. 
 * Spider [(Yu et al., 2018)](https://yale-lily.github.io/spider) is under the CC BY-SA 4.0 License. 
 * Geo880 [(Zelle and Mooney, 1996)](https://www.aaai.org/Library/AAAI/1996/aaai96-156.php) is available under the GNU General Public License 2.0.
