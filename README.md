@@ -130,8 +130,8 @@ We compare our baselines, trained on gold SQL queries annotated by experts, to o
 Setup the data for the text-to-SQL experiments as follows:
 ```bash
 data
-├── databases
-│   └── tables.json		# Spider tables.json
+├── tables.json			# Spider tables.json
+└── databases
 │   └── academic			
 │       └── academic.sqlite	# Sqlite version of the populated Academic database (see downloads)
 │   └── geo			
@@ -147,6 +147,7 @@ data
 └── queries
     └── geo	# See experiments data
         ├── geo_qdmr_train.json
+	└── geo_qdmr_predicted_train.json
 	└── geo_gold_train.json
 	└── geo_gold_dev.json
 	└── geo_gold_test.json
@@ -154,7 +155,8 @@ data
 	└── geo_gold_dev.sql
 	└── geo_gold_test.sql
     └── spider
-        ├── spider_qdmr_train.json	# See experiments data
+        ├── spider_qdmr_train.json		# See experiments data
+	└── spider_qdmr_predicted_train.json 	# See experiments data
 	└── spider_gold_train.json 	# Spider training set
 	└── spider_gold_dev.json 	# Spider dev set
 	└── spider_gold_train.sql 	# Spider training set SQL queries
@@ -193,15 +195,76 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 
 ### Spider
 
-#### Gold SQL
-#### Gold QDMR
-#### Predicted QDMR
+The configurations for training the different text-to-SQL models on Spider. Other parameters are fixed in `train.py`.
+
+#### SQL Gold
+
+```bash
+{'dataset': 'spider',
+'target_encoding': 'sql',
+'db_dir': `databases/spider_databases`,
+'training_set_file': `queries/spider/spider_gold_train.json`,
+'dev_set_file': `queries/spider/spider_gold_dev.json`,
+'dev_set_sql': `queries/spider/spider_gold_dev.sql`}
+```
+
+#### QDMR Gold
+
+```bash
+{'dataset': 'spider',
+'target_encoding': 'qdmr_formula',
+'db_dir': `databases/spider_databases`,
+'training_set_file': `queries/spider/spider_qdmr_train.json`,
+'dev_set_file': `queries/spider/spider_gold_dev.json`,
+'dev_set_sql': `queries/spider/spider_gold_dev.sql`}
+```
+
+#### QDMR Predicted
+
+```bash
+{'dataset': 'spider',
+'target_encoding': 'qdmr_formula',
+'db_dir': `databases/spider_databases`,
+'training_set_file': `queries/spider/spider_qdmr_predicted_train.json`,
+'dev_set_file': `queries/spider/spider_gold_dev.json`,
+'dev_set_sql': `queries/spider/spider_gold_dev.sql`}
+```
 
 ### Geo880
+The configurations for training the different text-to-SQL models on Geo880. Other parameters are fixed in `train.py`.
 
 #### Gold SQL
+
+```bash
+{'dataset': 'geo',
+'target_encoding': 'sql',
+'db_dir': `databases`,
+'training_set_file': `queries/geo/geo_gold_train.json`,
+'dev_set_file': `queries/spider/geo_gold_dev.json`,
+'dev_set_sql': `queries/spider/geo_gold_dev.sql`}
+```
+
 #### Gold QDMR
+
+```bash
+{'dataset': 'geo',
+'target_encoding': 'qdmr_sql',
+'db_dir': `databases`,
+'training_set_file': `queries/geo/geo_qdmr_train.json`,
+'dev_set_file': `queries/spider/geo_gold_dev.json`,
+'dev_set_sql': `queries/spider/geo_gold_dev.sql`}
+```
+
 #### Predicted QDMR
+
+```bash
+{'dataset': 'geo',
+'target_encoding': 'qdmr_sql',
+'db_dir': `databases`,
+'training_set_file': `queries/geo/geo_qdmr_predicted_train.json`,
+'dev_set_file': `queries/spider/geo_gold_dev.json`,
+'dev_set_sql': `queries/spider/geo_gold_dev.sql`}
+```
 
 ## Citation ✍🏽
 
