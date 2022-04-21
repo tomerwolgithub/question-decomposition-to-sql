@@ -160,17 +160,38 @@ data
 	└── spider_gold_train.sql 	# Spider training set SQL queries
 	└── spider_gold_dev.sql 	# Spider dev set SQL queries
 ```
-Most of 
+Database files are described in the downloads section. See the experiments section for the exact train and test files.
 
-#### 2. Gold SQL baseline
-#### 3. QDMR baseline (synthesized SQL)
+#### 2. Train model
+To train the text-to-SQL model configure the following parameters in `train.py`:
+* `dataset`: either `spider` or `geo`
+* `target_encoding`: `sql` for gold sql, either `qdmr_formula` or `qdmr_sql` for QDMR experiments
+* `data_dir`: path to directory containing the experiments data
+* `output_dir`: directory to store the trained model
+* `db_dir`: directory to store the trained model
+* `training_set_file`: training set file in the data directory e.g. `spider/spider_gold_train.json`
+* `dev_set_file`: dev set file in the data directory e.g. `spider/spider_gold_dev.json`
+* `dev_set_sql`: dev set SQL queries in the data directory e.g. `spider/spider_gold_dev.sql`
+
+Following the configuration, train the model:
+```bash
+CUDA_VISIBLE_DEVICES=0 python train.py 
+```
+
+#### 3. Test model
+
+To test the text-to-SQL model configure the relevant parameters and `checkpoint_path` in `test.py`.
+Following the configuration generate the trained model predictions:
+```bash
+CUDA_VISIBLE_DEVICES=0 python test.py 
+```
 
 
 ## Experiments ⚗️
 
 ### Data
-### Configuration
-### Evaluation
+### Spider
+### Geo
 
 ## Citation ✍🏽
 
