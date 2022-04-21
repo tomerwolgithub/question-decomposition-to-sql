@@ -131,19 +131,28 @@ Setup the data for the text-to-SQL experiments as follows:
 ```
 data
 ├── databases
+│   └── tables.json
 │   └── geo
 │       └── geo.sqlite
-|   └── ...
+|   └── spider_databases
+│       └── activity_1
+|           └── activity_1.sqlite
+│       └── ...           
 └── queries
     └── geo
         ├── geo_gold_train.json
 	└── geo_qdmr_train.json
 	└── geo_gold_dev.json
 	└── geo_gold_test.json
-	└── geo_qdmr_train.sql
+	└── geo_gold_train.sql
 	└── geo_gold_dev.sql
 	└── geo_gold_test.sql
-|   └── ...
+    └── spider
+        ├── spider_gold_train.json
+	└── spider_qdmr_train.json
+	└── spider_gold_dev.json
+	└── spider_gold_train.sql
+	└── spider_gold_dev.sql
 ```
 
 #### 2. Gold SQL baseline
