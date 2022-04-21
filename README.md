@@ -212,7 +212,7 @@ For convenience, you can download the encoded QDMR training sets used in our exp
 
 The configurations for training the text-to-SQL models on **Spider**. Other parameters are fixed in `train.py`.
 
-**SQL Gold:**
+**SQL Gold (Spider):**
 ```bash
 {'dataset': 'spider',
 'target_encoding': 'sql',
@@ -222,7 +222,7 @@ The configurations for training the text-to-SQL models on **Spider**. Other para
 'dev_set_sql': 'queries/spider/spider_gold_dev.sql'}
 ```
 
-**QDMR Gold:**
+**QDMR Gold (Spider):**
 ```bash
 {'dataset': 'spider',
 'target_encoding': 'qdmr_formula',
@@ -232,7 +232,7 @@ The configurations for training the text-to-SQL models on **Spider**. Other para
 'dev_set_sql': 'queries/spider/spider_gold_dev.sql'}
 ```
 
-**SQL Predicted:**
+**SQL Predicted (Spider):**
 ```bash
 {'dataset': 'spider',
 'target_encoding': 'qdmr_formula',
@@ -244,7 +244,7 @@ The configurations for training the text-to-SQL models on **Spider**. Other para
 
 The configurations for training the text-to-SQL models on **Geo880**.
 
-* **SQL Gold:**
+**SQL Gold (Geo):**
 ```bash
 {'dataset': 'geo',
 'target_encoding': 'sql',
@@ -254,7 +254,7 @@ The configurations for training the text-to-SQL models on **Geo880**.
 'dev_set_sql': 'queries/spider/geo_gold_dev.sql'}
 ```
 
-* **QDMR Gold:**
+**QDMR Gold (Geo):**
 ```bash
 {'dataset': 'geo',
 'target_encoding': 'qdmr_sql',
@@ -264,7 +264,7 @@ The configurations for training the text-to-SQL models on **Geo880**.
 'dev_set_sql': 'queries/spider/geo_gold_dev.sql'}
 ```
 
-* **QDMR Predicted:**
+**QDMR Predicted (Geo):**
 ```bash
 {'dataset': 'geo',
 'target_encoding': 'qdmr_sql',
