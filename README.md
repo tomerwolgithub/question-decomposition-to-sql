@@ -190,8 +190,18 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 ## Experiments ⚗️
 
 ### Data
+
 ### Spider
+
+#### Gold SQL
+#### Gold QDMR
+#### Predicted QDMR
+
 ### Geo
+
+#### Gold SQL
+#### Gold QDMR
+#### Predicted QDMR
 
 ## Citation ✍🏽
 
