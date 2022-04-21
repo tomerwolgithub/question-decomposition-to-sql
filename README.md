@@ -194,13 +194,13 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 ### Data
 
 #### Gold SQL:
-For the text-to-SQL experiments, models trained on gold text-to-SQL get as input `json` files containine the train, dev and test examples. For Spider we use the original train and dev files. For Geo880, Academic, IMDB and Yelp we format the original dataset in `json` file available [here](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/text_to_sql/gold_sql_datasets.zip).
+For the Spider experiments we use the original train and dev files. For Geo880, Academic, IMDB and Yelp we format the original datasets in `json` files available [here](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/text_to_sql/gold_sql_datasets.zip).
 
 #### QDMR Synthesized SQL:
-For the QDMR text-to-SQL models, we do not train directly on the synthesized SQL. Instead, we train on an encoded version of the QDMR with phrase-column linking. This representation can be automatically mapped to SQL to evaluate its execution.
-We use the output of the data generation phase as input to `encoded_grounded_qdmr` in `src/data_generation/write_encoding.py`. It recieves the `json` file containing the synthesized SQL examples and encodes them as lisp style formulas of QDMR steps and their relevant database linking (from the SQL synthesis).
+The QDMR text-to-SQL models are not trained directly on the synthesized SQL. Instead, we train on an encoded QDMR representation with the phrase-column linking from the SQL synthesis. This representation is automatically mapped to SQL to evaluate the models execution accuracy.
+To generate these *grounded QDMRs* we use the output of the data generation phase. The function `encoded_grounded_qdmr` in `src/data_generation/write_encoding.py` recieves the `json` file containing the synthesized SQL examples. It then encodes them as lisp style formulas of QDMR steps and their relevant database linking.
 
-For convenience, you may download the encoded QDMR training sets used in our experiments [here](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/text_to_sql/encoded_qdmr_datasets.zip). These include:
+For convenience, you can download the encoded QDMR training sets used in our experiments [here](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/text_to_sql/encoded_qdmr_datasets.zip). These include:
 
  * `qdmr_ground_enc_spider_train.json`: 5,349 synthesized examples using gold QDMR and answer supervision
  * `qdmr_ground_enc_predicted_spider_train_few_shot`: 5,075 synthesized examples using 700 gold QDMRs, predicted QDMR and answer supervision
