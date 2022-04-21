@@ -198,8 +198,9 @@ For the text-to-SQL experiments, models trained on gold text-to-SQL get as input
 
 #### QDMR Synthesized SQL:
 For the QDMR text-to-SQL models, we do not train directly on the synthesized SQL. Instead, we train on an encoded version of the QDMR with phrase-column linking. This representation can be automatically mapped to SQL to evaluate its execution.
-This representation is produced using the output of the data generation phase. The procedure `encoded_grounded_qdmr` in `src/data_generation/write_encoding.py` recieves as input the output `json` file containing the synthesized SQL examples. It encodes them into lisp style formulas of QDMR steps and their relevant database linking found in the SQL synthesis phase.
-For convenience you can download the encoded QDMR training files from [here]().
+We use the output of the data generation phase as input to `encoded_grounded_qdmr` in `src/data_generation/write_encoding.py`. It recieves the `json` file containing the synthesized SQL examples and encodes them as lisp style formulas of QDMR steps with their relevant database linking (from the SQL synthesis phase).
+
+For convenience, you may download the encoded QDMR training sets used in our experiments [here]().
 
 
 ### Configurations
