@@ -71,10 +71,8 @@ The QDMR decompositions are either manually annotated or automatically predicted
 Begin by copying all relevant sqlite databases to the `data_generation` directory.
 ```bash
 mkdir data_generation/data
-mkdir data_generation/data/spider_databases
-# copy Spider databases here
-mkdir data_generation/data/other_databases
-# copy Academic, IMDB, Yelp and Geo databases here
+mkdir data_generation/data/spider_databases # copy Spider databases here
+mkdir data_generation/data/other_databases # copy Academic, IMDB, Yelp and Geo databases here
 ```
 
 1. The SQL synthesis expect a formatted `csv` file, see [example](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/sql_synthesis_results/sql_synthesis_input_example.csv). Note that gold SQL is only used for computing the gold answer.
