@@ -138,12 +138,12 @@ data
 │       └── geo.sqlite		# Sqlite version of the populated Geo database (see downloads)
 │   └── imdb			
 │       └── imdb.sqlite		# Sqlite version of the populated IMDB database (see downloads)
-│   └── yelp			
-│       └── yelp.sqlite		# Sqlite version of the populated Yelp database (see downloads)
 │   └── spider_databases 	# Spider databases directory
 │       └── activity_1
 │           └── activity_1.sqlite
-│       └── ...           
+│       └── ...   
+│   └── yelp			
+│       └── yelp.sqlite		# Sqlite version of the populated Yelp database (see downloads)
 └── queries
     └── geo	# See experiments data
         ├── geo_qdmr_train.json
