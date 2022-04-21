@@ -16,7 +16,7 @@ This repository contains the code and data used in our paper:
 	* [**License**](https://)
 
 
-## Setup
+## Setup 🙌🏼
 
 1. Create the virtual environment
 ```
