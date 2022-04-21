@@ -198,7 +198,6 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 The configurations for training the different text-to-SQL models on Spider. Other parameters are fixed in `train.py`.
 
 * **SQL Gold:**
-
 ```bash
 {'dataset': 'spider',
 'target_encoding': 'sql',
@@ -208,8 +207,7 @@ The configurations for training the different text-to-SQL models on Spider. Othe
 'dev_set_sql': 'queries/spider/spider_gold_dev.sql'}
 ```
 
-#### QDMR Gold
-
+* **QDMR Gold:**
 ```bash
 {'dataset': 'spider',
 'target_encoding': 'qdmr_formula',
@@ -219,8 +217,7 @@ The configurations for training the different text-to-SQL models on Spider. Othe
 'dev_set_sql': 'queries/spider/spider_gold_dev.sql'}
 ```
 
-#### QDMR Predicted
-
+* **SQL Predicted:**
 ```bash
 {'dataset': 'spider',
 'target_encoding': 'qdmr_formula',
@@ -233,8 +230,7 @@ The configurations for training the different text-to-SQL models on Spider. Othe
 ### Geo880
 The configurations for training the different text-to-SQL models on Geo880. Other parameters are fixed in `train.py`.
 
-#### Gold SQL
-
+* **SQL Gold:**
 ```bash
 {'dataset': 'geo',
 'target_encoding': 'sql',
@@ -244,8 +240,7 @@ The configurations for training the different text-to-SQL models on Geo880. Othe
 'dev_set_sql': 'queries/spider/geo_gold_dev.sql'}
 ```
 
-#### Gold QDMR
-
+* **QDMR Gold:**
 ```bash
 {'dataset': 'geo',
 'target_encoding': 'qdmr_sql',
@@ -255,8 +250,7 @@ The configurations for training the different text-to-SQL models on Geo880. Othe
 'dev_set_sql': 'queries/spider/geo_gold_dev.sql'}
 ```
 
-#### Predicted QDMR
-
+* **QDMR Predicted:**
 ```bash
 {'dataset': 'geo',
 'target_encoding': 'qdmr_sql',
