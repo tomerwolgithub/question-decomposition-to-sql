@@ -112,7 +112,7 @@ TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/qdmr_parser/train
 To test a trained model and store its predictions, configure the following parameters in `test.py`:
 * `checkpoint_path`: path to the trained QDMR parser model to be evaluated
 * `dev_set_file`: name of the dev set `csv` to generate predictions for
-* `predictions_output_file`: path to output file to store the parser's generated predictions
+* `predictions_output_file`: the output file to store the parser's generated predictions
 
 And run the following command:
 ```bash
@@ -120,8 +120,8 @@ TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/qdmr_parser/test.
 ```
 
 ### Text-to-SQL 
-The text-to-SQL models are all T5-large sequence-to-sequence models finetuned to map questions to executable SQL queries.
-We compare our baselines, trained on gold SQL queries annotated by experts, to our synthesized SQL from QDMR and answer supervision.
+The text-to-SQL models are T5-large sequence-to-sequence models, finetuned to map questions to executable SQL queries.
+We compare the models trained on gold SQL queries, annotated by experts, to our synthesized SQL from QDMR and answer supervision.
 
 #### 1. Setup directory
 Setup the data for the text-to-SQL experiments as follows:
@@ -162,25 +162,25 @@ data
 Database files are described in the downloads section. See the experiments section for the exact train and test files.
 
 #### 2. Train model
-To train the text-to-SQL model configure the following parameters in `train.py`:
+To train the text-to-SQL model configure its following parameters in `train.py`:
 * `dataset`: either `spider` or `geo`
-* `target_encoding`: `sql` for gold sql, either `qdmr_formula` or `qdmr_sql` for QDMR experiments
-* `data_dir`: path to directory containing the experiments data
-* `output_dir`: directory to store the trained model
-* `db_dir`: directory to store the trained model
+* `target_encoding`: `sql` for gold sql and either `qdmr_formula` or `qdmr_sql` for the QDMR experiments
+* `data_dir`: path to the directory containing the experiments data
+* `output_dir`: the directory to store the trained model
+* `db_dir`: the directory to store the trained model
 * `training_set_file`: training set file in the data directory e.g. `spider/spider_gold_train.json`
 * `dev_set_file`: dev set file in the data directory e.g. `spider/spider_gold_dev.json`
 * `dev_set_sql`: dev set SQL queries in the data directory e.g. `spider/spider_gold_dev.sql`
 
-Following the configuration, train the model:
+Following configuration, to train the model run:
 ```bash
 CUDA_VISIBLE_DEVICES=0 python train.py 
 ```
 
 #### 3. Test model
 
-To test the text-to-SQL model configure the relevant parameters and `checkpoint_path` in `test.py`.
-Following the configuration generate the trained model predictions:
+To test the text-to-SQL model first configure the relevant parameters and `checkpoint_path` in `test.py`.
+Following the configuration, generate the trained model predictions using:
 ```bash
 CUDA_VISIBLE_DEVICES=0 python test.py 
 ```
@@ -191,26 +191,26 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 ### Data
 
 #### Gold SQL:
-For the Spider experiments we use the original train and dev files. For Geo880, Academic, IMDB and Yelp we format the original datasets in `json` files available [**here**](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/text_to_sql/gold_sql_datasets.zip).
+For the Spider experiments we use its original train and dev `json` and `sql` files. For Geo880, Academic, IMDB and Yelp we format the original datasets in `json` files available [**here**](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/text_to_sql/gold_sql_datasets.zip).
 
 #### QDMR Synthesized SQL:
-The QDMR text-to-SQL models are not trained directly on the synthesized SQL. Instead, we train on an encoded QDMR representation with the phrase-column linking from the SQL synthesis. This representation is automatically mapped to SQL to evaluate the models execution accuracy.
-To generate these *grounded QDMRs* we use the output of the data generation phase. The function `encoded_grounded_qdmr` in `src/data_generation/write_encoding.py` recieves the `json` file containing the synthesized SQL examples. It then encodes them as lisp style formulas of QDMR steps and their relevant database linking.
+The QDMR text-to-SQL models are not trained directly on the synthesized SQL. Instead, we train on an encoded QDMR representation with its phrase-DB linking (from the SQL synthesis). This representation is automatically mapped to SQL to evaluate the models execution accuracy.
+To generate these *grounded QDMRs* we use the output of the data generation phase. The function `encoded_grounded_qdmr` in `src/data_generation/write_encoding.py` recieves the `json` file containing the synthesized SQL examples. It then encodes them as lisp style formulas of QDMR steps and their relevant phrase-DB linking.
 
 For convenience, you can download the encoded QDMR training sets used in our experiments [**here**](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/data/text_to_sql/encoded_qdmr_datasets.zip). These include:
 
- * `qdmr_ground_enc_spider_train.json`: 5,349 synthesized examples using gold QDMR and answer supervision
- * `qdmr_ground_enc_predicted_spider_train_few_shot`: 5,075 synthesized examples using 700 gold QDMRs, predicted QDMR and answer supervision
- * `qdmr_ground_enc_predicted_spider_train_30_db.json`: 1,129 synthesized examples using predicted QDMR and answer supervision
- * `qdmr_ground_enc_predicted_spider_train_40_db.json`: 1,440 synthesized examples using predicted QDMR and answer supervision
- * `qdmr_ground_enc_predicted_spider_train_40_db_V2.json`: 1,552 synthesized examples using predicted QDMR and answer supervision
- * `qdmr_ground_enc_geo880_train.json`: 454 synthesized examples using gold QDMR and answer supervision
- * `qdmr_ground_enc_predicted_geo_train_zero_shot.json`: 432 synthesized examples using predicted QDMR and answer supervision
+ * `qdmr_ground_enc_spider_train.json`: 5,349 examples, synthesized using gold QDMR + answer supervision
+ * `qdmr_ground_enc_predicted_spider_train_few_shot`: 5,075 examples, synthesized examples using 700 gold QDMRs, predicted QDMR + answer supervision
+ * `qdmr_ground_enc_predicted_spider_train_30_db.json`: 1,129 examples, synthesized using predicted QDMR + answer supervision
+ * `qdmr_ground_enc_predicted_spider_train_40_db.json`: 1,440 examples, synthesized using predicted QDMR + answer supervision
+ * `qdmr_ground_enc_predicted_spider_train_40_db_V2.json`: 1,552 examples, synthesized using predicted QDMR + answer supervision
+ * `qdmr_ground_enc_geo880_train.json`: 454 examples, synthesized using gold QDMR + answer supervision
+ * `qdmr_ground_enc_predicted_geo_train_zero_shot.json`: 432 examples, synthesized using predicted QDMR + answer supervision
 
 
 ### Configurations
 
-Configurations for training the text-to-SQL models on **Spider**. Other parameters are fixed in `train.py`.
+The configurations for training the text-to-SQL models on **Spider**. Other parameters are fixed in `train.py`.
 
 * **SQL Gold:**
 ```bash
@@ -242,7 +242,7 @@ Configurations for training the text-to-SQL models on **Spider**. Other paramete
 'dev_set_sql': 'queries/spider/spider_gold_dev.sql'}
 ```
 
-Configurations for training the text-to-SQL models on **Geo880**.
+The configurations for training the text-to-SQL models on **Geo880**.
 
 * **SQL Gold:**
 ```bash
