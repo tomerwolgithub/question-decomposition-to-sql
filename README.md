@@ -140,16 +140,16 @@ data
 │       └── ...           
 └── queries
     └── geo
-        ├── geo_gold_train.json
-	└── geo_qdmr_train.json
+        ├── geo_qdmr_train.json
+	└── geo_gold_train.json
 	└── geo_gold_dev.json
 	└── geo_gold_test.json
 	└── geo_gold_train.sql
 	└── geo_gold_dev.sql
 	└── geo_gold_test.sql
     └── spider
-        ├── spider_gold_train.json
-	└── spider_qdmr_train.json
+        ├── spider_qdmr_train.json
+	└── spider_gold_train.json
 	└── spider_gold_dev.json
 	└── spider_gold_train.sql
 	└── spider_gold_dev.sql
