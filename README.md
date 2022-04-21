@@ -259,6 +259,11 @@ Configurations for training the text-to-SQL models on **Geo880**.
 'dev_set_sql': 'queries/spider/geo_gold_dev.sql'}
 ```
 
+### Evaluation
+Text-to-SQL model performance is evaluated using SQL execution accuracy in `src/text_to_sql/eval_spider.py`.
+For encoded QDMR predictions the script first converts them to SQL before executing them on the target database.
+
+
 ## Citation ✍🏽
 
 ```
