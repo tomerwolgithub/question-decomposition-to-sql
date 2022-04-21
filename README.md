@@ -193,8 +193,9 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 
 ### Data
 
-### Spider
+### Configurations
 
+#### Spider
 The configurations for training the different text-to-SQL models on Spider. Other parameters are fixed in `train.py`.
 
 * **SQL Gold:**
@@ -227,7 +228,7 @@ The configurations for training the different text-to-SQL models on Spider. Othe
 'dev_set_sql': 'queries/spider/spider_gold_dev.sql'}
 ```
 
-### Geo880
+#### Geo880
 The configurations for training the different text-to-SQL models on Geo880. Other parameters are fixed in `train.py`.
 
 * **SQL Gold:**
