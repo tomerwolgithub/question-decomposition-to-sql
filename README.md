@@ -133,7 +133,7 @@ data
 ├── databases
 │   └── tables.json		# Spider tables.json
 │   └── geo			
-│       └── geo.sqlite		# Populated sqlite version of Geo database (see downloads)
+│       └── geo.sqlite		# Sqlite version of the populated Geo database (see downloads)
 │   └── spider_databases 	# Spider databases directory
 │       └── activity_1
 │           └── activity_1.sqlite
