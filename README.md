@@ -275,8 +275,8 @@ The configurations for training the text-to-SQL models on **Geo880**.
 ```
 
 ### Evaluation
-Text-to-SQL model performance is evaluated using SQL execution accuracy in `src/text_to_sql/eval_spider.py`.
-For encoded QDMR predictions the script first converts them to SQL before executing them on the target database.
+Text-to-SQL model performance is evaluated using SQL execution accuracy in [`src/text_to_sql/eval_spider.py`](https://github.com/tomerwolgithub/question-decomposition-to-sql/blob/main/src/text_to_sql/eval_spider.py).
+The script automatically converts encoded QDMR predictions to SQL before executing them on the target database.
 
 
 ## Citation ✍🏽
