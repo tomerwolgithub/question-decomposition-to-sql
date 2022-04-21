@@ -134,9 +134,9 @@ data
 │   └── tables.json		# Spider tables.json
 │   └── geo			
 │       └── geo.sqlite		# Populated sqlite version of Geo database (see downloads)
-|   └── spider_databases 	# Spider databases directory
+│   └── spider_databases 	# Spider databases directory
 │       └── activity_1
-|           └── activity_1.sqlite
+│           └── activity_1.sqlite
 │       └── ...           
 └── queries
     └── geo	# See experiments data
