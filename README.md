@@ -197,7 +197,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 #### Gold QDMR
 #### Predicted QDMR
 
-### Geo
+### Geo880
 
 #### Gold SQL
 #### Gold QDMR
