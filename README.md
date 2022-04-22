@@ -1,5 +1,5 @@
 # Weakly Supervised Text-to-SQL Parsing through Question Decomposition
-The official repository for the Finings of NAACL 2022 paper, titled "Weakly Supervised Text-to-SQL Parsing through Question Decomposition" by Tomer Wolfson, Daniel Deutch and Jonathan Berant.
+The official repository for the **Finings of NAACL 2022** paper, titled ***"Weakly Supervised Text-to-SQL Parsing through Question Decomposition"* by Tomer Wolfson, Daniel Deutch and Jonathan Berant**.
 
 This repository contains the code and data used in our paper:
 
