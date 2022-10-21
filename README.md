@@ -119,6 +119,9 @@ And run the following command:
 TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/qdmr_parser/test.py
 ```
 
+We also provide the checkpoint file of our QDMR parser ([scoring 0.23 EM on Break](https://leaderboard.allenai.org/break/submission/c4b3v1j22jqbqs7it330)):
+* [T5-Large QDMR Parser epoch=10-exact_match=0.24.ckpt](https://storage.googleapis.com/ai2i/qdmr_parser_t5/QDMR_parser_T5_large.zip)
+
 ### Text-to-SQL 
 The text-to-SQL models are T5-large sequence-to-sequence models, finetuned to map questions to executable SQL queries.
 We compare the models trained on gold SQL queries, annotated by experts, to our synthesized SQL from QDMR and answer supervision.
